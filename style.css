@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'pretendard';
+    src: url('./assets/fonts/Pretendard-Regular.woff') format(woff),
+        url('./assets/fonts/Pretendard-Thin.woff') format(woff),
+        url('./assets/fonts/Pretendard-Light.woff') format(woff),
+        url('./assets/fonts/Pretendard-SemiBold.woff') format(woff),
+        url('./assets/fonts/Pretendard-Medium.woff') format(woff),
+        url('./assets/fonts/Pretendard-ExtraLight.woff') format(woff),
+        url('./assets/fonts/Pretendard-ExtraBold.woff') format(woff),
+        url('./assets/fonts/Pretendard-Bold.woff') format(woff),
+        url('./assets/fonts/Pretendard-Black.woff') format(woff);
+    /* font-weight: normal; */
+    /* font-style: normal; */
+}
+
+* {
+    font-family: 'pretendard';
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* TODO */
+}
+
+/* ! Style announcement section */
+
+.announcement-bar {
+    /* position: fixed; */
+    background-color: #2e2d2d;
+    color: white;
+    padding: 0.5%;
+    font-size: 18px;
+}
+
+.announcement-bar p {
+    text-align: center;
+}
+
+.announcement-bar a {
+    font-weight: bold;
+    color: white;
+}
+
+.announcement-bar span {
+    margin-left: 10px;
+}
+
+/* ! Style navigation section */
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* position: fixed; */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    /* padding: 32px; */
+}
+
+nav a {
+    list-style: none;
+    text-decoration: none;
+    color: #53565a;
+}
+
+.cta-nav {
+    background-color: #2e2d2d;
+    border-radius: 10px;
+}
+
+.cta-nav a {
+    display: inline-block;
+    padding: 12px;
+    color: white;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    width: 12%;
+}
+
+.logo-nav img {
+    width: 100%;
+}
+
+nav .content-primary-nav li,
+nav .content-secondary-nav li,
+.cta-nav {
+    display: inline-block;
+}
