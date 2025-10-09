@@ -1,20 +1,22 @@
+/* =========================================
+   FONT & GLOBAL RESET
+========================================= */
+
 @font-face {
     font-family: 'pretendard';
-    src: url('./assets/fonts/Pretendard-Regular.woff') format(woff),
-        url('./assets/fonts/Pretendard-Thin.woff') format(woff),
-        url('./assets/fonts/Pretendard-Light.woff') format(woff),
-        url('./assets/fonts/Pretendard-SemiBold.woff') format(woff),
-        url('./assets/fonts/Pretendard-Medium.woff') format(woff),
-        url('./assets/fonts/Pretendard-ExtraLight.woff') format(woff),
-        url('./assets/fonts/Pretendard-ExtraBold.woff') format(woff),
-        url('./assets/fonts/Pretendard-Bold.woff') format(woff),
-        url('./assets/fonts/Pretendard-Black.woff') format(woff);
-    /* font-weight: normal; */
-    /* font-style: normal; */
+    src: url('./assets/fonts/Pretendard-Regular.woff') format('woff'),
+        url('./assets/fonts/Pretendard-Thin.woff') format('woff'),
+        url('./assets/fonts/Pretendard-Light.woff') format('woff'),
+        url('./assets/fonts/Pretendard-SemiBold.woff') format('woff'),
+        url('./assets/fonts/Pretendard-Medium.woff') format('woff'),
+        url('./assets/fonts/Pretendard-ExtraLight.woff') format('woff'),
+        url('./assets/fonts/Pretendard-ExtraBold.woff') format('woff'),
+        url('./assets/fonts/Pretendard-Bold.woff') format('woff'),
+        url('./assets/fonts/Pretendard-Black.woff') format('woff'); 
 }
 
 * {
-    font-family: 'pretendard';
+    font-family: 'pretendard', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,10 +25,18 @@
 :root {
     --gray: #53565a;
     --dark-gray: #2e2d2d;
+    --columns: 12;
+    --gutter: 16px;
 }
 
+/* =========================================
+   GLOBAL ELEMENTS
+========================================= */
+
 body {
-    /* TODO */
+    background-color: #fff;
+    color: var(--dark-gray);
+    line-height: 1.6;
 }
 
 li {
@@ -35,20 +45,31 @@ li {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
-/* * Button Primary */
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+}
 
+/* =========================================
+   COMPONENTS
+========================================= */
+
+/* Button Primary */
 .button-primary {
     background-color: var(--dark-gray);
     border-radius: 10px;
     display: inline-block;
-    padding: 12px;
+    padding: 12px 20px;
     color: white;
 }
 
-/* * Button Underline */
-
+/* Button Underline */
 .button-underline {
     font-size: 20px;
     text-decoration: underline;
@@ -64,41 +85,34 @@ a {
     margin-left: 8px;
 }
 
-/* ! Style announcement section */
+/* =========================================
+   ANNOUNCEMENT BAR
+========================================= */
 
 .announcement-bar {
-    /* position: fixed; */
     background-color: var(--dark-gray);
     color: white;
     padding: 0.5%;
     font-size: 18px;
-}
-
-.announcement-bar p {
     text-align: center;
 }
 
 .announcement-bar a {
     font-weight: bold;
     color: white;
-}
-
-.announcement-bar span {
     margin-left: 10px;
 }
 
-/* ! Style navigation section */
+/* =========================================
+   NAVIGATION
+========================================= */
 
 nav {
     display: flex;
-    margin: 14px 50px 14px 50px;
-    overflow: auto;
     justify-content: space-between;
-    /* position: fixed; */
-    background-color: white;
-    display: flex;
     align-items: center;
-    /* padding: 32px; */
+    margin: 14px 0;
+    background-color: white;
 }
 
 nav a {
@@ -114,7 +128,6 @@ nav a {
     display: inline-block;
     padding: 12px;
     color: white;
-    margin-left: -20px;
 }
 
 .logo-nav {
@@ -127,27 +140,22 @@ nav a {
     width: 100%;
 }
 
-nav .content-primary-nav li,
-nav .content-secondary-nav li,
-.cta-nav {
-    display: inline-block;
-    margin-left: 20px;
-}
-
 .primary-nav,
 .secondary-nav {
     display: flex;
-    gap: 100;
+    gap: 100px;
 }
 
-/* ! Style hero section */
+/* =========================================
+   HERO SECTION
+========================================= */
 
 .hero {
     background-color: #f9f7f6;
     display: flex;
     flex-flow: column wrap;
-    gap: 50px;
     align-items: center;
+    gap: 50px;
     padding-bottom: 50px;
 }
 
@@ -155,8 +163,7 @@ nav .content-secondary-nav li,
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    margin: 100px 0px 50px 0px;
+    margin: 100px 0 50px;
     gap: 150px;
 }
 
@@ -171,21 +178,6 @@ nav .content-secondary-nav li,
     white-space: pre-line;
 }
 
-/* .hero-cta-primary a {
-    background-color: var(--dark-gray);
-    border-radius: 10px;
-    display: inline-block;
-    padding: 12px;
-    color: white;
-} */
-
-/* .hero-cta-primary a::after {
-    content: url('assets/icon/arrow-white.svg');
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-} */
-
 .first-hero p {
     white-space: pre-line;
     font-size: 24px;
@@ -195,8 +187,8 @@ nav .content-secondary-nav li,
 .second-hero ul {
     display: flex;
     gap: 24px;
-    align-items: center;
     flex-flow: row wrap;
+    align-items: center;
 }
 
 .hero-cta-secondary a {
@@ -204,10 +196,13 @@ nav .content-secondary-nav li,
 }
 
 .preview-hero img {
-    width: 1800px;
+    width: 100%;
+    max-width: 1800px;
 }
 
-/* ! Style trusted by section */
+/* =========================================
+   TRUSTED BY SECTION
+========================================= */
 
 .trusted-by {
     display: flex;
@@ -218,8 +213,8 @@ nav .content-secondary-nav li,
 
 .companies {
     display: flex;
-    gap: 0px;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .companies img {
@@ -227,18 +222,16 @@ nav .content-secondary-nav li,
     margin: 50px;
 }
 
-.card-infinite {
-    width: 50% auto;
-}
-
-/* ! Style How it works section */
+/* =========================================
+   HOW IT WORKS SECTION
+========================================= */
 
 .how-it-works {
     display: flex;
     justify-content: center;
     text-align: center;
     white-space: pre-line;
-    padding: 100px 0px 160px 0px;
+    padding: 100px 0 160px;
 }
 
 .content-how-it-works h1 {
@@ -249,30 +242,16 @@ nav .content-secondary-nav li,
     font-size: 20px;
 }
 
-/* .content-how-it-works a {
-    font-size: 20px;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    color: black;
-}
-
-.content-how-it-works a::after {
-    content: url('assets/icon/1ed6e6e3-f779-4f63-9580-3ce05d83feeb.svg');
-    width: 24px;
-    height: 24px;
-    display: inline;
-    margin-left: 8px;
-} */
-
-/* ! Style features section */
+/* =========================================
+   FEATURES SECTION
+========================================= */
 
 .features {
     background-color: #fbfafa;
     display: flex;
-    padding: 0px 50px 0px 50px;
     flex-flow: column wrap;
     gap: 100px;
-    padding-bottom: 120px;
+    padding: 0 0 120px;
 }
 
 .features h1 {
@@ -288,14 +267,15 @@ nav .content-secondary-nav li,
 }
 
 .card-feature img {
-    width: 1800px;
+    width: 100%;
+    max-width: 1800px;
 }
 
 .card-content {
     display: flex;
-    width: 100%;
     flex-flow: column wrap;
     gap: 8px;
+    padding: 0 32px;
 }
 
 .card-content p {
@@ -306,51 +286,42 @@ nav .content-secondary-nav li,
     margin-top: 32px;
 }
 
-.card-content h1,
-.card-content p,
-.card-content a {
-    padding: 0px 0px 0px 32px;
-}
-
-.card-image {
-    display: flex;
-}
-
-/* ! Style download section */
+/* =========================================
+   DOWNLOAD SECTION
+========================================= */
 
 .download-app {
     display: flex;
     flex-flow: column wrap;
-    margin: 120px 0px 120px 0px;
+    margin: 120px 0;
 }
 
-.download-app>.download-cta>ul {
+.download-app .download-cta ul {
     display: flex;
     justify-content: center;
     gap: 42px;
-    flex-direction: row;
-    margin: 80px 0px 80px 0px;
+    margin: 80px 0;
 }
 
-.download-app>.download-content {
+.download-app .download-content {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap:20px;
-    white-space: pre-line;
+    align-items: center;
     text-align: center;
+    white-space: pre-line;
+    gap: 20px;
 }
 
-.download-app>.download-content p {
+.download-app .download-content p {
     font-size: 24px;
     color: var(--gray);
 }
 
-.download-app>.download-content h1 {
+.download-app .download-content h1 {
     font-size: 48px;
 }
 
-.download-app>.download-image {
+.download-app .download-image {
     display: flex;
     width: 100%;
 }
