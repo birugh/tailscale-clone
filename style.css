@@ -270,6 +270,9 @@ a {
 }
 
 @media (max-width: 991.98px) {
+  .nav__primary {
+    display: none;
+  }
   .container {
     max-width: 720px;
   }
@@ -536,10 +539,8 @@ header {
   right: 0;
   z-index: 10;
 
-  /* padding: 12px 0; */
   background-color: white;
-  /* border-bottom: 2px solid #cccccc; */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 nav {
@@ -555,9 +556,10 @@ nav {
   /* display: inline-block; */
 }
 
-.nav__logo > img {
+/* !NOTE */
+nav > .nav__logo > img {
   width: 100%;
-  max-width: 120px;
+  max-width: 240px;
 }
 
 .nav__primary ul,
