@@ -71,12 +71,11 @@ h1 {
 
 .btn--underline {
   padding: 8px 0;
-  margin: 8px 16px;
   position: relative;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 20px;
+  font-size: 16px;
   color: black;
   background: none;
 }
@@ -214,11 +213,9 @@ nav>.nav__logo>img {
   color: var(--gray);
 }
 
-.second-hero ul {
+.second-hero {
   display: flex;
-  gap: 24px;
-  flex-flow: row wrap;
-  align-items: center;
+  gap: 12px;
 }
 
 .hero-cta-secondary a {
@@ -272,12 +269,41 @@ nav>.nav__logo>img {
   text-align: center;
 }
 
+/* ! Features */
+
+#features {}
+
+.card__wrapper>.card-image {
+  height: 100%;
+  margin-bottom: 42px;
+}
+
 .features {
   /* background-color: #fbfafa; */
   display: flex;
   flex-flow: column wrap;
   gap: 100px;
   padding: 0 0 120px;
+}
+
+.card__wrapper,
+.card__wrapper img {
+  width: 100%;
+}
+
+.card__wrapper>.card__content {
+  margin-bottom: 64px;
+  max-width: 620px;
+}
+
+.card__content>h3 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+.card__content>p {
+  font-size: 16px;
+  margin-bottom: 24px;
 }
 
 .features h1 {
@@ -651,6 +677,10 @@ nav>.nav__logo>img {
     font-size: 48px;
   }
 
+  #features>.container>.row>.card__wrapper>.card__content h3 {
+    font-size: 38px;
+  }
+
   .nav__primary {
     display: none;
   }
@@ -731,6 +761,10 @@ nav>.nav__logo>img {
 
   #how-it-works>.container>.row h2 {
     font-size: 38px;
+  }
+
+  #features>.container>.row>.card__wrapper>.card__content h3 {
+    font-size: 32px;
   }
 
   .col-sm-1 {
