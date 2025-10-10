@@ -1,83 +1,71 @@
-/* =========================================
-   FONT & GLOBAL RESET
-========================================= */
-
 @font-face {
-    font-family: 'pretendard';
-    src: url('./assets/fonts/Pretendard-Regular.woff') format('woff'),
-        url('./assets/fonts/Pretendard-Thin.woff') format('woff'),
-        url('./assets/fonts/Pretendard-Light.woff') format('woff'),
-        url('./assets/fonts/Pretendard-SemiBold.woff') format('woff'),
-        url('./assets/fonts/Pretendard-Medium.woff') format('woff'),
-        url('./assets/fonts/Pretendard-ExtraLight.woff') format('woff'),
-        url('./assets/fonts/Pretendard-ExtraBold.woff') format('woff'),
-        url('./assets/fonts/Pretendard-Bold.woff') format('woff'),
-        url('./assets/fonts/Pretendard-Black.woff') format('woff'); 
+  font-family: "pretendard";
+  src: url("./assets/fonts/Pretendard-Regular.woff") format("woff"),
+    url("./assets/fonts/Pretendard-Thin.woff") format("woff"),
+    url("./assets/fonts/Pretendard-Light.woff") format("woff"),
+    url("./assets/fonts/Pretendard-SemiBold.woff") format("woff"),
+    url("./assets/fonts/Pretendard-Medium.woff") format("woff"),
+    url("./assets/fonts/Pretendard-ExtraLight.woff") format("woff"),
+    url("./assets/fonts/Pretendard-ExtraBold.woff") format("woff"),
+    url("./assets/fonts/Pretendard-Bold.woff") format("woff"),
+    url("./assets/fonts/Pretendard-Black.woff") format("woff");
 }
 
 * {
-    font-family: 'pretendard', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: "pretendard", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --gray: #53565a;
-    --dark-gray: #2e2d2d;
-    --columns: 12;
-    --gutter: 16px;
+  --gray: #53565a;
+  --dark-gray: #2e2d2d;
+  --columns: 12;
+  --gutter: 16px;
 }
 
-/* =========================================
-   GLOBAL ELEMENTS
-========================================= */
 
 body {
-    background-color: #fff;
-    color: var(--dark-gray);
-    line-height: 1.6;
+  background-color: #fff;
+  color: var(--dark-gray);
+  line-height: 1.6;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
-
-/* Container */
 .container {
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 var(--gutter);
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
 }
 
 .container-fluid {
-    width: 100%;
-    margin: 0;
-    padding: 0 var(--gutter);
+  width: 100%;
+  margin: 0;
+  padding: 0 var(--gutter);
 }
 
-/* Row */
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(var(--gutter) * -0.5);
-    margin-right: calc(var(--gutter) * -0.5);
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--gutter) * -0.5);
+  margin-right: calc(var(--gutter) * -0.5);
 }
 
 [class*="col-"] {
-    padding-left: calc(var(--gutter) * 0.5);
-    padding-right: calc(var(--gutter) * 0.5);
-    flex: 1 0 0%;
+  padding-left: calc(var(--gutter) * 0.5);
+  padding-right: calc(var(--gutter) * 0.5);
+  flex: 1 0 0%;
 }
-
-/* ! Breakpoint */
 
 @media (max-width: 1399.98px) {
   .container {
@@ -422,272 +410,225 @@ a {
   }
 }
 
-/* =========================================
-   COMPONENTS
-========================================= */
-
-/* Button Primary */
 .button-primary {
-    background-color: var(--dark-gray);
-    border-radius: 10px;
-    display: inline-block;
-    padding: 12px 20px;
-    color: white;
+  background-color: var(--dark-gray);
+  border-radius: 10px;
+  display: inline-block;
+  padding: 12px 20px;
+  color: white;
 }
 
-/* Button Underline */
 .button-underline {
-    font-size: 20px;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    color: black;
+  font-size: 20px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  color: black;
 }
 
 .button-underline::after {
-    content: url('assets/icon/1ed6e6e3-f779-4f63-9580-3ce05d83feeb.svg');
-    width: 24px;
-    height: 24px;
-    display: inline;
-    margin-left: 8px;
+  content: url("assets/icon/1ed6e6e3-f779-4f63-9580-3ce05d83feeb.svg");
+  width: 24px;
+  height: 24px;
+  display: inline;
+  margin-left: 8px;
 }
 
-/* =========================================
-   ANNOUNCEMENT BAR
-========================================= */
-
 .announcement-bar {
-    background-color: var(--dark-gray);
-    color: white;
-    padding: 0.5%;
-    font-size: 18px;
-    text-align: center;
+  background-color: var(--dark-gray);
+  color: white;
+  padding: 0.5%;
+  font-size: 18px;
+  text-align: center;
 }
 
 .announcement-bar a {
-    font-weight: bold;
-    color: white;
-    margin-left: 10px;
+  font-weight: bold;
+  color: white;
+  margin-left: 10px;
 }
 
-/* =========================================
-   NAVIGATION
-========================================= */
-
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 14px 0;
-    background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0;
+  background-color: white;
 }
 
 nav a {
-    color: var(--gray);
+  color: var(--gray);
 }
 
 .cta-nav {
-    background-color: var(--dark-gray);
-    border-radius: 10px;
+  background-color: var(--dark-gray);
+  border-radius: 10px;
 }
 
 .cta-nav a {
-    display: inline-block;
-    padding: 12px;
-    color: white;
+  display: inline-block;
+  padding: 12px;
+  color: white;
 }
 
 .logo-nav {
-    display: flex;
-    align-items: center;
-    width: 15%;
+  display: flex;
+  align-items: center;
+  width: 15%;
 }
 
 .logo-nav img {
-    width: 100%;
+  width: 100%;
 }
 
 .primary-nav,
 .secondary-nav {
-    display: flex;
-    gap: 100px;
+  display: flex;
+  gap: 100px;
 }
-
-/* =========================================
-   HERO SECTION
-========================================= */
 
 .hero {
-    background-color: #f9f7f6;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    gap: 50px;
-    padding-bottom: 50px;
+  background-color: #f9f7f6;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 50px;
 }
 
-.top-hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px 0 50px;
-    gap: 150px;
+.top-hero .container {
+  margin: 100px 0 50px;
 }
 
 .hero-cta {
-    display: flex;
-    flex-flow: column;
-    gap: 24px;
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
 }
 
 .top-hero h1 {
-    font-size: 80px;
-    white-space: pre-line;
+  font-size: 80px;
 }
 
 .first-hero p {
-    white-space: pre-line;
-    font-size: 24px;
-    color: var(--gray);
+  font-size: 24px;
+  color: var(--gray);
 }
 
 .second-hero ul {
-    display: flex;
-    gap: 24px;
-    flex-flow: row wrap;
-    align-items: center;
+  display: flex;
+  gap: 24px;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
 .hero-cta-secondary a {
-    color: var(--dark-gray);
+  color: var(--dark-gray);
 }
 
 .preview-hero img {
-    width: 100%;
-    max-width: 1800px;
+  width: 100%;
+  max-width: 1800px;
 }
 
-/* =========================================
-   TRUSTED BY SECTION
-========================================= */
-
 .trusted-by {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 50px;
 }
 
 .companies {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .companies img {
-    width: 200px;
-    margin: 50px;
+  width: 200px;
+  margin: 50px;
 }
 
-/* =========================================
-   HOW IT WORKS SECTION
-========================================= */
-
 .how-it-works {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    white-space: pre-line;
-    padding: 100px 0 160px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 0 160px;
 }
 
 .content-how-it-works h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .content-how-it-works p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
-/* =========================================
-   FEATURES SECTION
-========================================= */
-
 .features {
-    background-color: #fbfafa;
-    display: flex;
-    flex-flow: column wrap;
-    gap: 100px;
-    padding: 0 0 120px;
+  background-color: #fbfafa;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 100px;
+  padding: 0 0 120px;
 }
 
 .features h1 {
-    font-size: 48px;
-    white-space: pre-line;
+  font-size: 48px;
 }
 
 .card-feature {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    gap: 100px;
+  margin-bottom: 100px;
 }
 
 .card-feature img {
-    width: 100%;
-    max-width: 1800px;
+  width: 100%;
+  max-width: 1800px;
 }
 
 .card-content {
-    display: flex;
-    flex-flow: column wrap;
-    gap: 8px;
-    padding: 0 32px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 8px;
 }
 
 .card-content p {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .card-content a {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
-/* =========================================
-   DOWNLOAD SECTION
-========================================= */
-
 .download-app {
-    display: flex;
-    flex-flow: column wrap;
-    margin: 120px 0;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 120px 0;
 }
 
 .download-app .download-cta ul {
-    display: flex;
-    justify-content: center;
-    gap: 42px;
-    margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+  margin: 80px 0;
 }
 
 .download-app .download-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    white-space: pre-line;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
 }
 
 .download-app .download-content p {
-    font-size: 24px;
-    color: var(--gray);
+  font-size: 24px;
+  color: var(--gray);
 }
 
 .download-app .download-content h1 {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .download-app .download-image {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
