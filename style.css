@@ -279,6 +279,10 @@ nav>.nav__logo>img {
   gap: 50px;
 }
 
+.trusted-by p {
+  text-align: center;
+}
+
 .trusted-by>.carousel>.card--wrapper__right {
   margin-bottom: 0px;
 }
@@ -393,10 +397,6 @@ nav>.nav__logo>img {
 
 /* ! Integrations */
 
-#integrations {
-  margin: 64px 0;
-}
-
 #integrations>.container-fluid>.row {
   gap: 64px;
 }
@@ -406,9 +406,10 @@ nav>.nav__logo>img {
   margin: 0;
 }
 
-#integrations h1 {
+#integrations h2 {
   max-width: 580px;
   font-size: 42px;
+  line-height: 1.2;
 }
 
 #integrations>.container>.row {
@@ -482,6 +483,10 @@ nav>.nav__logo>img {
 
 /* ! Homelab */
 
+#homelab {
+  margin-top: 128px;
+}
+
 #homelab>.container-fluid>.row {
   justify-content: center;
   gap: 48px;
@@ -494,6 +499,10 @@ nav>.nav__logo>img {
   margin-right: auto;
   width: 100%;
 }
+
+/* .homelab__contents p{
+  max-width: 520px;
+} */
 
 .homelab__cta .row {
   justify-content: center;
@@ -509,16 +518,22 @@ nav>.nav__logo>img {
   text-align: center;
 }
 
-.homelab__contents h1 {
+.homelab__contents h2 {
   margin: 24px 0;
+  line-height: 1.2;
+  font-size: 32px;
 }
 
-.homelab__contents h1 {
+.homelab__contents h2 {
   max-width: 420px;
 }
 
 .homelab__image img {
   height: 100%;
+}
+
+.homelab__contents .row {
+  margin: 0;
 }
 
 /* ! Developer Approved */
@@ -690,14 +705,16 @@ nav>.nav__logo>img {
 
 .benefit.row {
   justify-content: space-between;
+  align-items: stretch;
 }
 
 .core__header {
+  flex-grow: 1;
   margin-bottom: 24px;
 }
 
 .core__card--wrapper>.core__header {
-  padding: 64px 32px;
+  padding: 32px 24px;
   margin-top: auto;
   margin-bottom: auto;
   height: 100%;
@@ -722,6 +739,8 @@ nav>.nav__logo>img {
 
 .core__card--wrapper {
   height: 100%;
+  display: flex;
+  flex-direction: column;
   /* padding: 24px 12px; */
 }
 
@@ -737,7 +756,10 @@ nav>.nav__logo>img {
   justify-content: space-between;
 }
 
-
+.security__cta {
+  display: flex;
+  gap: 24px;
+}
 
 .security__card {
   display: flex;
@@ -921,7 +943,7 @@ nav>.nav__logo>img {
   color: white;
 }
 
-.try__header h1 {
+.try__header h2 {
   max-width: 360px;
   font-size: 52px;
   margin-bottom: 42px;
@@ -1153,7 +1175,7 @@ footer li>span {
     width: 60%;
   }
 
-  .try__header h1 {
+  .try__header h2 {
     max-width: 240px;
     font-size: 38px;
     margin-bottom: 42px;
@@ -1221,6 +1243,11 @@ footer li>span {
 }
 
 @media (max-width: 1199.98px) {
+  .top-hero.mbt-128 {
+    margin-bottom: 64px;
+    margin-top: 64px;
+  }
+
   .testimonial__header h1 {
     max-width: 240px;
     line-height: 1.5;
@@ -1230,7 +1257,7 @@ footer li>span {
     width: 75%;
   }
 
-  .try__header h1 {
+  .try__header h2 {
     max-width: 160px;
   }
 
@@ -1309,6 +1336,35 @@ footer li>span {
 }
 
 @media (max-width: 991.98px) {
+  .try__cta p {
+    font-size: 20px;
+  }
+  .workflow__content h2 {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+
+  .workflow__content p {
+    margin-bottom: 18px;
+  }
+
+  .preview-hero.mbt-64,
+  .trusted-by.mbt-64,
+  .top-hero.mbt-128 {
+    margin-bottom: 32px;
+    margin-top: 32px;
+  }
+
+  .security__content h2 {
+    margin-bottom: 12px;
+    font-size: 36px;
+  }
+
+  .card__content h3 {
+    font-size: 36px;
+    max-width: 480px;
+  }
+
   #security>.container-fluid>.row {
     gap: 32px;
   }
@@ -1364,8 +1420,12 @@ footer li>span {
     padding: 42px 32px;
   }
 
-  .try__header h1 {
-    max-width: 200px;
+  .try__header h2 {
+    max-width: 100%;
+  }
+
+  #how-it-works h2 {
+    font-size: 38px;
   }
 
   .nav__primary {
@@ -1438,6 +1498,53 @@ footer li>span {
 }
 
 @media (max-width: 767.98px) {
+  .workflow__content h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .workflow__content p {
+    margin-bottom: 12px;
+  }
+
+  .security__content h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .homelab__contents h2 {
+    font-size: 26px;
+  }
+
+  .try__header h2 {
+    font-size: 32px;
+  }
+
+  .card__wrapper>.card-image {
+    margin-bottom: 24px;
+  }
+
+  .card__wrapper>.card__content {
+    margin-bottom: 32px;
+    max-width: 620px;
+  }
+
+  .preview-hero.mbt-64,
+  .trusted-by.mbt-64,
+  .top-hero.mbt-128 {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+
+  .card__content h3 {
+    font-size: 28px;
+    max-width: 320px;
+  }
+
+  #how-it-works h2 {
+    font-size: 32px;
+    max-width: 420px;
+  }
 
   .list__primary.card--row,
   .list__secondary.card--row {
@@ -1460,7 +1567,7 @@ footer li>span {
     flex-direction: column;
   }
 
-  #integrations h1 {
+  #integrations h2 {
     max-width: 460px;
     font-size: 32px;
   }
@@ -1480,6 +1587,7 @@ footer li>span {
 
   .top-hero>.row h1 {
     font-size: 52px;
+    margin-top: 64px;
   }
 
   .grid__wrapper {
@@ -1588,20 +1696,62 @@ footer li>span {
 }
 
 @media (max-width: 575.98px) {
+  .try__header h2 {
+    font-size: 28px;
+    max-width: 100%;
+  }
 
-  /* .list__primary,
-  .list__secondary {
-    display: flex;
-    flex-direction: row;
-  } */
+  .demo__image>.row img {
+    width: 100%;
+  }
 
-    .list__primary.card--row--2,
+  .workflow__content h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .workflow__content p {
+    margin-bottom: 12px;
+  }
+
+  .security__cta {
+    flex-direction: column;
+  }
+
+  .security__content h2 {
+    font-size: 32px;
+  }
+
+  .homelab__contents h2 {
+    font-size: 24px;
+  }
+
+  .card__wrapper>.card-image {
+    margin-bottom: 18px;
+  }
+
+  .card__wrapper>.card__content {
+    margin-bottom: 24px;
+    max-width: 620px;
+  }
+
+  .card__content h3 {
+    font-size: 24px;
+    max-width: 260px;
+  }
+
+  #how-it-works h2 {
+    font-size: 26px;
+    max-width: 320px;
+  }
+
+  .list__primary.card--row--2,
   .list__secondary.card--row--2 {
     display: none;
     flex-direction: row;
   }
 
-    .list__primary.card--row,
+  .list__primary.card--row,
   .list__secondary.card--row {
     display: flex;
   }
@@ -1611,6 +1761,7 @@ footer li>span {
   }
 
   .top-hero>.row h1 {
+    margin-top: 84px;
     font-size: 32px;
   }
 
@@ -1628,7 +1779,7 @@ footer li>span {
     max-width: 120px;
   }
 
-  #integrations h1 {
+  #integrations h2 {
     max-width: 380px;
     font-size: 28px;
   }
