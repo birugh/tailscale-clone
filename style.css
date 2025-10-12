@@ -397,7 +397,7 @@ nav>.nav__logo>img {
   margin: 64px 0;
 }
 
-#integrations > .container-fluid> .row {
+#integrations>.container-fluid>.row {
   gap: 64px;
 }
 
@@ -406,8 +406,7 @@ nav>.nav__logo>img {
   margin: 0;
 }
 
-.integrations__cta {
-}
+.integrations__cta {}
 
 #integrations h1 {
   max-width: 580px;
@@ -485,7 +484,7 @@ nav>.nav__logo>img {
 
 /* ! Homelab */
 
-#homelab > .container-fluid>.row {
+#homelab>.container-fluid>.row {
   justify-content: center;
   gap: 48px;
 }
@@ -504,7 +503,7 @@ nav>.nav__logo>img {
   margin: 0;
 }
 
-.homelab__contents > .row {
+.homelab__contents>.row {
   justify-content: center;
 }
 
@@ -837,27 +836,29 @@ nav>.nav__logo>img {
   padding: 32px 0;
 }
 
-.demo__preview {
-  background-color: #19224a;
-  border-radius: 12px;
-  padding: 24px 0 0;
-}
-
 .try--wrapper.row {
   justify-content: space-between;
 }
 
-.try--wrapper {
-  /* max-height: 120px; */
+.row>.try__card {
+  padding-right: 12px;
 }
 
-.demo__preview img {
-  display: block;
-  margin: 0 auto;
+.row>.demo__preview {
+  padding-left: 12px;
 }
 
-.demo__preview {
-  text-align: center;
+.demo__image {
+  background-color: #19224a;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.demo__image .row {
+  justify-content: center;
+  /* padding-top: 32px; */
+  margin: 0;
 }
 
 .try__header {
@@ -865,10 +866,19 @@ nav>.nav__logo>img {
   position: relative;
   background-color: #19224a;
   color: #6e96ef;
-  flex-grow: 1;
   border-radius: 12px 12px 0 0;
+  max-width: 100%;
 }
 
+.try__header span {
+  color: white;
+}
+
+.try__header h1 {
+  max-width: 360px;
+  font-size: 52px;
+  margin-bottom: 42px;
+}
 
 .try__logo {
   position: absolute;
@@ -881,27 +891,21 @@ nav>.nav__logo>img {
   opacity: 30%;
 }
 
-/* .try__logo img {
-  max-height: 100%;
-} */
-
-.try__header span {
-  color: white;
-}
-
 .try__cta {
   background-color: #6c94ec;
   border-radius: 0 0 12px 12px;
-}
-
-.try__cta {
   padding: 42px 32px;
+  width: 100%;
+  display: flex;
 }
 
-.try__header h1 {
-  max-width: 360px;
-  font-size: 52px;
-  margin-bottom: 42px;
+.try__content {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.try-tailscale>.row {
+  margin: 0;
 }
 
 .try__cta p {
@@ -911,9 +915,12 @@ nav>.nav__logo>img {
 
 .try__card {
   max-height: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+}
+
+.try__card .row {
+  margin: 0;
+  align-items: stretch;
+  height: 100%;
 }
 
 /* ! Client */
@@ -948,7 +955,7 @@ nav>.nav__logo>img {
 
 /* ! Footer */
 
-.footer__bottom > .row{
+.footer__bottom>.row {
   gap: 12px;
 }
 
@@ -958,7 +965,7 @@ footer,
   margin: 64px 0;
 }
 
-.footer__bottom > .footer__copyright {
+.footer__bottom>.footer__copyright {
   padding: 0;
 }
 
@@ -971,7 +978,7 @@ footer,
 }
 
 .footer__bottom.row>.footer__bottom__logo {
-      margin: 16px 0;
+  margin: 16px 0;
   max-width: 240px;
 }
 
@@ -1175,10 +1182,6 @@ footer li>span {
     line-height: 1.5;
   }
 
-  .demo__preview img {
-    width: 80%;
-  }
-
   .second-hero>.btn.btn--primary {
     width: 75%;
   }
@@ -1262,9 +1265,22 @@ footer li>span {
 }
 
 @media (max-width: 991.98px) {
-    .footer__top > .row > .col-2.col-sm-10.col-md-6.col-lg-4:nth-child(-n+3) {
+  #try-tailscale>.container-fluid>.row {
+    gap: 32px;
+  }
+
+  .row>.try__card {
+    padding-right: calc(var(--gutter) * 0.5);
+  }
+
+  .row>.demo__preview {
+    padding-left:  calc(var(--gutter) * 0.5);
+  }
+
+  .footer__top>.row>.col-2.col-sm-10.col-md-6.col-lg-4:nth-child(-n+3) {
     margin-bottom: 24px;
   }
+
   .footer__social {
     display: flex;
     flex-direction: column;
@@ -1272,17 +1288,6 @@ footer li>span {
 
   .try__header {
     padding: 42px 32px;
-  }
-
-  .try__logo {
-    position: absolute;
-    display: none;
-    z-index: 0;
-    justify-content: flex-end;
-    top: 0;
-    right: 0;
-    height: 100%;
-    opacity: 30%;
   }
 
   .try__header h1 {
@@ -1359,8 +1364,6 @@ footer li>span {
 }
 
 @media (max-width: 767.98px) {
-
-
   .testimonial__header h1 {
     font-size: 38px;
     max-width: 180px;
@@ -1371,7 +1374,7 @@ footer li>span {
     font-size: 32px;
   }
 
-  .row > .integrations__cta > .row {
+  .row>.integrations__cta>.row {
     justify-content: center;
     gap: 32px;
   }
@@ -1494,6 +1497,10 @@ footer li>span {
 }
 
 @media (max-width: 575.98px) {
+  .try__logo {
+    display: none;
+  }
+
   .top-hero>.row h1 {
     font-size: 32px;
   }
