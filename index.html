@@ -27,26 +27,26 @@
     </div>
     <div class="container-fluid">
       <nav class="row">
-        <div class="col-1 col-md-4 col-lg-4 col-xl-2 nav__logo">
+        <div class="col-1 col-md-1 col-lg-1 col-xl-1 nav__logo">
           <img src="assets/82d72633-5b8a-4f0c-9a6f-220ba75be95a.svg" alt="Logo Tailscale"
             title="Press to go to the top" />
         </div>
         <div class="col-5 col-lg-8 col-xl-8 nav__primary">
           <ul>
-            <li><a href="">Product</a></li>
-            <li><a href="">Solutions</a></li>
-            <li><a href="">Enterprise</a></li>
-            <li><a href="">Customers</a></li>
-            <li><a href="">Docs</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Pricing</a></li>
+            <li><a href="javascript:;" class="nav__btn">Product</a></li>
+            <li><a href="javascript:;" class="nav__btn">Solutions</a></li>
+            <li><a href="javascript:;" class="nav__btn">Enterprise</a></li>
+            <li><a href="javascript:;" class="nav__btn">Customers</a></li>
+            <li><a href="javascript:;" class="nav__btn">Docs</a></li>
+            <li><a href="javascript:;" class="nav__btn">Blog</a></li>
+            <li><a href="javascript:;" class="nav__btn">Pricing</a></li>
           </ul>
         </div>
         <div class="col-6 col-lg-6 nav__secondary">
           <ul>
-            <li><a href="javascript:;">Download</a></li>
-            <li><a href="javascript:;">Log in</a></li>
-            <li><a href="javascript:;">Contact sales</a></li>
+            <li><a href="javascript:;" class="nav__btn">Download</a></li>
+            <li><a href="javascript:;" class="nav__btn">Log in</a></li>
+            <li><a href="javascript:;" class="nav__btn">Contact sales</a></li>
             <li><a href="javascript:;" class="btn btn--primary">Get started - it's free!</a>
             </li>
           </ul>
@@ -1222,52 +1222,59 @@
     <section id="core-benefits">
       <div class="container-fluid">
         <div class="core__title">
-          <h1>Simple, powerful, and reliable</h1>
+          <h2>Simple, powerful, and reliable</h2>
         </div>
-        <div class="benefit row">
-          <div class="core__card--wrapper col-4 col-lg-6 col-sm-12">
-            <div class="core__header row">
-              <img src="assets/71f614d92af4821e1c55ec43e61d0df7df305424-138x103.svg" alt="" />
-              <h2>Quick deployment</h2>
-              <p>
-                Establish private networks in minutes and push out Tailscale to
-                users without having to configure every device.
-              </p>
+        <div class="benefit">
+          <div class="row">
+            <div class="core__card--wrapper col-4 col-xl-6 col-md-12">
+              <div class="core__header col-12">
+                <img src="assets/71f614d92af4821e1c55ec43e61d0df7df305424-138x103.svg" alt="" />
+                <h3>Quick deployment</h3>
+                <p>Establish private networks in minutes
+                  and push out Tailscale to users without
+                  having to configure every device.</p>
+              </div>
+              <div class="core__sub col-12">
+                <div class="core__content">
+                  <h4>3 mins</h4>
+                  <p>to set up your network</p>
+                </div>
+              </div>
             </div>
-            <div class="core__content">
-              <h2>3 mins</h2>
-              <p>to set up your network</p>
-            </div>
-          </div>
-          <div class="core__card--wrapper col-4 col-lg-6 col-sm-12">
-            <div class="core__header row">
+            <div class="core__card--wrapper col-4 col-xl-6 col-md-12">
+              <div class="core__header col-12">
               <img src="assets/c4d3b72947b9f9359f2a3c2bbc20b3ae3ebed0bf-138x103.svg" alt="" />
-              <h2>Infrastructure agnostic</h2>
-              <p>
-                Tailscale works wherever you do, on any platform, service, or
-                runtime, anywhere.
-              </p>
+                <h3>Infrastructure agnostic</h3>
+                <p>Tailscale works wherever you do, on
+                  any platform, service, or runtime,
+                  anywhere.</p>
+              </div>
+              <div class="core__sub col-12">
+                <div class="core__content">
+                  <h4>2.5m</h4>
+                  <p>devices connected</p>
+                </div>
+              </div>
             </div>
-            <div class="core__content">
-              <h2>2.5m</h2>
-              <p>devices connected</p>
-            </div>
-          </div>
-          <div class="core__card--wrapper col-4 col-lg-4 col-sm-12">
-            <div class="core__header row">
+            <div class="core__card--wrapper col-4 col-xl-6 col-md-12">
+              <div class="core__header col-12">
               <img src="assets/53da8fed443bccea69db6b8d3bf98126cd5d80d0-138x103.svg" alt="" />
-              <h2>Secure by default</h2>
-              <p>
-                Authorize which resources are accessible to users, roles, or
-                groups with grants and Access Control Lists (ACLs).
-              </p>
-            </div>
-            <div class="core__content">
-              <h2>10k+</h2>
-              <p>companies running Tailscale</p>
+                <h3>Secure by default</h3>
+                <p>Authorize which resources are
+                  accessible to users, roles, or groups
+                  with grants and Access Control Lists
+                  (ACLs).</p>
+              </div>
+              <div class="core__sub col-12">
+                <div class="core__content">
+                  <h4>10k+</h4>
+                  <p>companies running Tailscale</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -1365,18 +1372,18 @@
       <div class="container-fluid">
         <div class="row">
           <div class="workflow col-8 col-lg-12">
-              <div class="workflow__content">
-                <h2>Fits into your preferred workflow</h2>
-                <p>
-                  With 100+ integrations, Tailscale works with all your favorite
-                  tools. Provision resources that automatically join the tailnet
-                  using Terraform or Pulumi. Integrate policy management into your
-                  existing GitOps workflow. Our docs will help you get started on
-                  building your tailnet today.
-                </p>
-                <a class="btn btn--secondary" href="javascript:;">See docs</a>
-                <img src="assets/527b93e1e1c9b63f0f7b90a8ac60886f462f0794-790x215.svg" alt="" />
-              </div>
+            <div class="workflow__content">
+              <h2>Fits into your preferred workflow</h2>
+              <p>
+                With 100+ integrations, Tailscale works with all your favorite
+                tools. Provision resources that automatically join the tailnet
+                using Terraform or Pulumi. Integrate policy management into your
+                existing GitOps workflow. Our docs will help you get started on
+                building your tailnet today.
+              </p>
+              <a class="btn btn--secondary" href="javascript:;">See docs</a>
+              <img src="assets/527b93e1e1c9b63f0f7b90a8ac60886f462f0794-790x215.svg" alt="" />
+            </div>
           </div>
           <div class="guide col-4 col-lg-12">
             <div class="guide__image">
@@ -1417,8 +1424,9 @@
           <div class="demo__preview col-6 col-lg-12">
             <div class="demo__image">
               <div class="row">
-
-                <img src="assets/b715b4ca5e2577da60f0d529a4a9bc2ad4cadf59-362x567.svg" alt="" />
+                <div class="image__wrapper">
+                  <img src="assets/b715b4ca5e2577da60f0d529a4a9bc2ad4cadf59-362x567.svg" alt="" />
+                </div>
               </div>
             </div>
           </div>
@@ -1607,15 +1615,15 @@
             <a href="javascript:;"><img src="assets/icon/0f9055ca-cbe1-4837-a27e-01f91ff3e33e.svg" alt="" /></a>
             <a href="javascript:;"><img src="assets/icon/19eaa076-478e-4662-a11b-71b4c1d9348f.svg" alt="" /></a>
             <a href="javascript:;"><img src="assets/icon/e1fe4b50-a058-49ba-9895-474ae7c5f374.svg" alt="" /></a>
-        </div>
-        <div class="footer__copyright col-12">
-          <p>
-            &copy; 2025 Tailscale Inc. All rights reserved. Tailscale is a
-            registered trademark of Tailscale Inc.
-          </p>
+          </div>
+          <div class="footer__copyright col-12">
+            <p>
+              &copy; 2025 Tailscale Inc. All rights reserved. Tailscale is a
+              registered trademark of Tailscale Inc.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
   </footer>
 
 </body>
