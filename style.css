@@ -258,12 +258,14 @@ h1 {
 }
 
 .btn--primary:hover,
+.btn--primary--arrow:focus,
 .btn--primary--arrow:hover {
   background-color: #545252;
   color: white;
   text-decoration: none;
 }
 
+.btn--primary--arrow:focus::after,
 .btn--primary--arrow:hover::after {
   transform: translateX(4px);
 }
@@ -274,7 +276,7 @@ h1 {
 }
 
 .btn--secondary::after {
-    content: url("assets/icon/1ed6e6e3-f779-4f63-9580-3ce05d83feeb.svg");
+  content: url("assets/icon/1ed6e6e3-f779-4f63-9580-3ce05d83feeb.svg");
   width: 24px;
   height: 24px;
   margin-left: 6px;
@@ -282,6 +284,7 @@ h1 {
   transition: transform 0.5s ease;
 }
 
+.btn--secondary:focus::after,
 .btn--secondary:hover::after {
   transform: translateX(4px);
 }
@@ -297,6 +300,7 @@ h1 {
   background: none;
 }
 
+.btn--underline:focus,
 .btn--underline:hover {
   text-decoration: none;
 }
@@ -309,6 +313,7 @@ h1 {
   transition: transform 0.5s ease;
 }
 
+.btn--underline:focus::after,
 .btn--underline:hover::after {
   transform: translateX(4px);
 }
@@ -324,6 +329,7 @@ h1 {
   transition: width 0.5s ease;
 }
 
+.btn--underline:focus::before,
 .btn--underline:hover::before {
   width: 100%;
 }
@@ -333,6 +339,7 @@ h1 {
   transition: color .5s ease;
 }
 
+.nav__btn:focus,
 .nav__btn:hover {
   color: #1e1e1e;
 }
@@ -372,6 +379,8 @@ main {
   margin-left: 10px;
   text-decoration: underline;
 }
+
+
 
 /* ! Navigation bar */
 
@@ -882,7 +891,7 @@ nav>.nav__logo img {
   margin: 0;
 }
 
-.card__cta>.row > li img {
+.card__cta>.row>li img {
   width: 18px;
   height: 18px;
 }
@@ -2028,12 +2037,17 @@ footer {
 }
 
 @media (max-width: 767.98px) {
+  .card__content {
+    animation: none;
+    animation-timeline: none;
+  }
+
   main {
     margin-top: 64px;
   }
 
   .announcement-bar p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .workflow__content h2 {
@@ -2156,7 +2170,7 @@ footer {
     display: none;
   }
 
-  .row>.list__primary > .security__card {
+  .row>.list__primary>.security__card {
     view-timeline-name: --security__list-primary-lg-6;
     view-timeline-axis: block;
 
@@ -2166,7 +2180,7 @@ footer {
     animation-fill-mode: both;
   }
 
-  .row>.list__secondary > .security__card {
+  .row>.list__secondary>.security__card {
     view-timeline-name: --security__list-secondary-lg-6;
     view-timeline-axis: block;
 
