@@ -1,0 +1,13 @@
+file css:
+custom
+general
+grid
+style
+
+css:
+dibuat jadi beberapa class
+-mt mb wrap dll
+
+fix font face
+
+infinite card carousel pause
