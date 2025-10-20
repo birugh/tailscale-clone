@@ -5,13 +5,21 @@
   <meta charset="UTF-8" />
   <title>Tailscale — Secure, Zero-Config VPN for Teams and Devices</title>
   <meta name="title" content="Landing page - Tailscale" />
-  <meta name="description" content="Tailscale is a secure, zero-config VPN that connects your devices and teams seamlessly. Access everything safely — fast, private, and simple.">
+  <meta name="description"
+    content="Tailscale is a secure, zero-config VPN that connects your devices and teams seamlessly. Access everything safely — fast, private, and simple.">
   <meta name="author" content="Biru Kheza Maharley" />
   <meta name="publisher" content="Tailscale" />
-  <meta name="keywords" content="Tailscale, VPN, Zero Trust, Secure Network, Remote Access, Mesh VPN, WireGuard, Business VPN, Site-to-Site, Homelab, Cloud Networking, Secure Connectivity, Device Networking, Private Network, Access Control Lists, Zero Config VPN">
+  <meta name="keywords"
+    content="Tailscale, VPN, Zero Trust, Secure Network, Remote Access, Mesh VPN, WireGuard, Business VPN, Site-to-Site, Homelab, Cloud Networking, Secure Connectivity, Device Networking, Private Network, Access Control Lists, Zero Config VPN">
   <meta name="robots" content="index, follow" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="style/components.css" type="text/css" />
+  <link rel="stylesheet" href="style/grid.css" type="text/css" />
+  <link rel="stylesheet" href="style/base.css" type="text/css" />
+  <link rel="stylesheet" href="style/resp.css" type="text/css" />
+  <link rel="stylesheet" href="assets/fonts/stylesheet.css" type="text/css" />
+  <!-- <link rel="stylesheet" href="style/animation.css"> -->
   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -44,12 +52,12 @@
       </div>
     </div>
     <div class="container-fluid">
-      <nav class="row">
-        <div class="col-1 col-md-1 col-lg-1 col-xl-1 nav__logo">
+      <nav class="grid-row">
+        <div class="col-1 col-md-1 col-lg-1 nav__logo">
           <img src="assets/82d72633-5b8a-4f0c-9a6f-220ba75be95a.svg" alt="Logo Tailscale"
             title="Press to go to the top" />
         </div>
-        <div class="col-5 col-lg-8 col-xl-8 nav__primary">
+        <div class="col-4 col-lg-8 nav__primary">
           <ul>
             <li><a href="javascript:;" class="nav__btn">Product</a></li>
             <li><a href="javascript:;" class="nav__btn">Solutions</a></li>
@@ -69,7 +77,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-6 col-lg-8 col-xl-2 nav-mobile-menu">
+        <div class="col-6 col-lg-8 nav-mobile-menu">
           <div class="hamburger-menu">
             <span class="menu-linear"></span>
             <span class="menu-linear"></span>
@@ -84,7 +92,7 @@
     <section id="hero">
       <div class="container-fluid">
         <div class="top-hero mbt-128">
-          <div class="row">
+          <div class="grid-row">
             <div class="col-7 col-xl-12">
               <h1>Your legacy VPN belongs in the past</h1>
             </div>
@@ -106,7 +114,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="preview-hero mbt-64">
           <img src="assets/hero/fab2bfd901de3d58f7f62d35fe9a5107fedc43c1-1360x725.svg" alt="" />
         </div>
@@ -174,28 +182,26 @@
       </div>
     </section>
 
-    <section id="how-it-works" class="mbt-128">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <img class="how__image col-12" src="assets/ip-image.png" alt="">
-              <h2 class="col-12">Tailscale makes secure networking easy</h2>
-              <p class="col-12">
-                Achieve point-to-point network connectivity that enforces least privilege.
-              </p>
-            </div>
+    <section class="container-fluid mbt-128">
+      <div class="grid-row">
+        <div class="col-12">
+          <div class="grid-row">
+            <img class="how__image col-12" src="assets/ip-image.png" alt="">
+            <h2 class="col-12">Tailscale makes secure networking easy</h2>
+            <p class="col-12">
+              Achieve point-to-point network connectivity that enforces least privilege.
+            </p>
           </div>
-          <div class="col-12">
-            <a class="btn btn--underline" href="javascript:;">How it works</a>
-          </div>
+        </div>
+        <div class="col-12">
+          <a class="btn btn--underline" href="javascript:;">How it works</a>
         </div>
       </div>
     </section>
 
     <section id="features" class="mbt-64">
       <div class="container-fluid">
-        <div class="row">
+        <div class="grid-row">
           <div class="card__wrapper">
             <div class="card__content">
               <h3>Deploy a zero-config, no-fuss VPN</h3>
@@ -255,7 +261,7 @@
 
     <section id="integrations" class="mbt-64">
       <div class="container-fluid">
-        <div class="row">
+        <div class="grid-row">
           <div class="integrations__title col-12">
             <h2>
               100+ integrations means you can incorporate Tailscale
@@ -311,20 +317,20 @@
             </div>
           </div>
           <div class="integrations__cta col-xxl-12">
-            <div class="row">
+            <div class="grid-row">
               <a class="btn btn--primary--arrow" href="javascript:;">Operating systems</a>
               <a class="btn btn--underline" href="javascript:;">Identity providers</a>
               <a class="btn btn--underline" href="javascript:;">Get started with AWS</a>
             </div>
           </div>
         </div>
-        <!-- <div class="row">
+        <!-- <div class="grid-row">
           <div class="col-md-12">
             <div class="wrap__integration">
-              <div class="row">
+              <div class="grid-row">
                 <div class="col-4">
                   <div class="wrap__box mt-10 mb-10">
-                    <div class="row">
+                    <div class="grid-row">
                       <div class="col-4">
                         <div class="box__size box__red"></div>
                       </div>
@@ -366,9 +372,9 @@
 
     <section id="homelab">
       <div class="container-fluid">
-        <div class="row">
+        <div class="grid-row">
           <div class="homelab__contents col-12">
-            <div class="row">
+            <div class="grid-row">
               <p>Homelab</p>
               <h2>Your home away from home</h2>
               <p>
@@ -378,7 +384,7 @@
             </div>
           </div>
           <div class="homelab__cta col-12">
-            <div class="row">
+            <div class="grid-row">
               <a class="btn btn--primary--arrow" href="javascript:;">Download for free</a>
               <a class="btn btn--underline" href="javascript:;">Learn more</a>
             </div>
@@ -411,7 +417,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -441,7 +447,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -469,7 +475,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -496,7 +502,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -524,7 +530,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -553,7 +559,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -583,7 +589,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -611,7 +617,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -638,7 +644,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -666,7 +672,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -696,7 +702,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -726,7 +732,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -754,7 +760,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -781,7 +787,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -809,7 +815,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -838,7 +844,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -868,7 +874,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -896,7 +902,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -923,7 +929,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -951,7 +957,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -981,7 +987,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -1011,7 +1017,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -1039,7 +1045,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -1066,7 +1072,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -1094,7 +1100,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -1123,7 +1129,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -1153,7 +1159,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -1181,7 +1187,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -1208,7 +1214,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -1236,7 +1242,7 @@
               </p>
             </div>
             <div class="card__cta">
-              <ul class="row">
+              <ul class="grid-row">
                 <li>
                   <p>Reply</p>
                 </li>
@@ -1258,7 +1264,7 @@
           <h2>Simple, powerful, and reliable</h2>
         </div>
         <div class="benefit">
-          <div class="row">
+          <div class="grid-row">
             <div class="core__card--wrapper col-4 col-xl-6 col-md-12">
               <div class="core__header col-12">
                 <img src="assets/71f614d92af4821e1c55ec43e61d0df7df305424-138x103.svg" alt="" />
@@ -1313,7 +1319,7 @@
 
     <section id="security">
       <div class="container-fluid">
-        <div class="row">
+        <div class="grid-row">
           <div class="security__content col-6 col-lg-12">
             <h2>Our commitment to security</h2>
             <p>
@@ -1403,7 +1409,7 @@
 
     <section id="quick-start">
       <div class="container-fluid">
-        <div class="row">
+        <div class="grid-row">
           <div class="workflow col-8 col-lg-12">
             <div class="workflow__content">
               <h2>Fits into your preferred workflow</h2>
@@ -1436,9 +1442,9 @@
 
     <section id="try-tailscale">
       <div class="container-fluid">
-        <div class="row">
+        <div class="grid-row">
           <div class="try__card col-6 col-lg-12">
-            <div class="row">
+            <div class="grid-row">
               <div class="try__header col-12">
                 <h2>Try Tailscale for <span>free</span></h2>
                 <a class="btn btn--secondary" href="javascript:;">Get started</a>
@@ -1456,7 +1462,7 @@
           </div>
           <div class="demo__preview col-6 col-lg-12">
             <div class="demo__image">
-              <div class="row">
+              <div class="grid-row">
                 <div class="image__wrapper">
                   <img src="assets/b715b4ca5e2577da60f0d529a4a9bc2ad4cadf59-362x567.svg" alt="" />
                 </div>
@@ -1529,7 +1535,7 @@
   <footer>
     <div class="container-fluid">
       <div class="footer__top">
-        <div class="row">
+        <div class="grid-row">
           <div class="col-2 col-sm-10 col-md-6 col-lg-4">
             <div class="footer__header">
               <h4>Product</h4>
@@ -1625,7 +1631,7 @@
       </div>
 
       <div class="footer__bottom">
-        <div class="row">
+        <div class="grid-row">
           <div class="footer__bottom__logo col-3 col-md-4 col-sm-12">
             <img src="assets/82d72633-5b8a-4f0c-9a6f-220ba75be95a.svg" alt="" />
           </div>
