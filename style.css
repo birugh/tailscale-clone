@@ -765,113 +765,45 @@ nav>.nav__logo img {
 }
 
 /* ! Try Tailscale */
-.try-tailscale {
-  background-color: fff;
+.try__content .inner{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-
-.try-tailscale>.card {
-  background-color: var(--shadow_gargoyle);
-}
-
-.try-tailscale {
-  padding: 32px 0;
-}
-
-.try--wrapper.grid-row {
-  justify-content: space-between;
-}
-
-.grid-row>.workflow {
-  padding-right: 12px;
-}
-
-.grid-row>.guide {
-  padding-left: 12px;
-}
-
-.grid-row>.try__card {
-  padding-right: 12px;
-}
-
-.grid-row>.demo__preview {
-  padding-left: 12px;
-}
-
-.demo__image {
-  background-color: var(--fly_by_night);
-  border-radius: 12px;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.demo__image .grid-row {
-  justify-content: center;
-  margin: 0;
-}
-
 .try__header {
-  padding: 42px 84px 84px 32px;
+  flex: 1;
   position: relative;
   background-color: var(--fly_by_night);
   color: var(--guilliman_blue);
-  border-radius: 12px 12px 0 0;
-  max-width: 100%;
+}
+
+.try__header img {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  right: 0;
 }
 
 .try__header span {
-  color: var(--var(--white));
-}
-
-.try__header h2 {
-  max-width: 360px;
-  margin-bottom: 42px;
-  line-height: 1.2;
-}
-
-.try__logo {
-  position: absolute;
-  display: flex;
-  z-index: 0;
-  justify-content: flex-end;
-  top: 0;
-  right: 0;
-  height: 100%;
-  opacity: 30%;
+  color: var(--white);
 }
 
 .try__cta {
-  background-color: var(--guilliman_blue);
-  border-radius: 0 0 12px 12px;
-  padding: 42px 32px;
+  background-color: #6c94ec;
+}
+
+.try__header h3 {
+  font-size: 48px;
+  width: 320px;
+}
+
+.demo__wrapper {
+  justify-content: center;
+  background-color: var(--fly_by_night);
+}
+
+.try__content .inner {
   width: 100%;
-  display: flex;
-}
-
-.try__content {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.try-tailscale>.grid-row {
-  margin: 0;
-}
-
-.try__cta p {
-  margin-bottom: 12px;
-}
-
-.try__card {
-  max-height: 100%;
-}
-
-.try__card .grid-row {
-  margin: 0;
-  align-items: stretch;
-  height: 100%;
-}
-
-.try__card {
   view-timeline-name: --try__card;
   view-timeline-axis: block;
 
