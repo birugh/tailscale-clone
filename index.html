@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="style/grid.css" type="text/css" />
   <link rel="stylesheet" href="style/base.css" type="text/css" />
   <link rel="stylesheet" href="style/resp.css" type="text/css" />
+  <link rel="stylesheet" href="style/utilities.css" type="text/css" />
   <link rel="stylesheet" href="assets/fonts/stylesheet.css" type="text/css" />
   <!-- <link rel="stylesheet" href="style/animation.css"> -->
   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -89,106 +90,100 @@
   </header>
 
   <main>
-    <section id="hero">
-      <div class="container-fluid">
-        <div class="top-hero mbt-128">
-          <div class="grid-row">
-            <div class="col-7 col-xl-12">
-              <h1>Your legacy VPN belongs in the past</h1>
+    <section class="hero container-fluid mt-12 pt-20 pb-12">
+      <div class="hero__top mb-20">
+        <div class="grid-row">
+          <div class="col-7 col-xl-12">
+            <h1>Your legacy VPN belongs in the past</h1>
+          </div>
+          <div class="hero-cta col-5 col-xl-12">
+            <div class="hero__title mb-4">
+              <p>
+                Fast, seamless device connectivity — no hardware, no
+                firewall rules, no wasted time.
+              </p>
             </div>
-            <div class="col-5 col-xl-12">
-              <div class="hero-cta">
-                <div class="first-hero">
-                  <p>
-                    Fast, seamless device connectivity — no hardware, no
-                    firewall rules, no wasted time.
-                  </p>
-                </div>
-                <div class="second-hero">
-                  <div class="second-wrapper">
-                    <a class="btn btn--primary btn--primary--arrow" href="javascript:;">Start connecting devices</a>
-                    <a class="btn" href="javascript:;">Contact sales</a>
-                  </div>
-                </div>
-              </div>
+            <div class="grid-row no-gutter">
+              <a class="btn btn--primary btn--primary--arrow" href="javascript:;">Start connecting devices</a>
+              <a class="btn" href="javascript:;">Contact sales</a>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="preview-hero mbt-64">
-          <img src="assets/hero/fab2bfd901de3d58f7f62d35fe9a5107fedc43c1-1360x725.svg" alt="" />
+      <div class="hero__image mb-8">
+        <img src="assets/hero/fab2bfd901de3d58f7f62d35fe9a5107fedc43c1-1360x725.svg" alt="" />
+      </div>
+
+      <div class="trusted-by">
+        <div class="trusted-by__title mb-8">
+          TRUSTED BY 10,000+ COMPANIES
         </div>
+        <div class="carousel">
+          <div class="card--wrapper__right">
+            <div class="card__client">
+              <img src="assets/hero/10004.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10006.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10007.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10008.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10009.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10010.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10013.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10014.svg" alt="">
+            </div>
 
-        <div class="trusted-by mbt-64">
-          <div class="trusted-by__title">
-            TRUSTED BY 10,000+ COMPANIES
-          </div>
-          <div class="carousel">
-            <div class="card--wrapper__right">
-              <div class="card__client">
-                <img src="assets/hero/10004.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10006.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10007.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10008.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10009.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10010.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10013.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10014.svg" alt="">
-              </div>
+            <!-- * Duplicated card -->
 
-              <!-- * Duplicated card -->
-
-              <div class="card__client">
-                <img src="assets/hero/10004.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10006.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10007.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10008.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10009.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10010.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10013.svg" alt="">
-              </div>
-              <div class="card__client">
-                <img src="assets/hero/10014.svg" alt="">
-              </div>
+            <div class="card__client">
+              <img src="assets/hero/10004.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10006.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10007.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10008.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10009.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10010.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10013.svg" alt="">
+            </div>
+            <div class="card__client">
+              <img src="assets/hero/10014.svg" alt="">
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container-fluid mbt-128">
+    <section class="how-it-works container-fluid mt-20 mb-20">
       <div class="grid-row">
         <div class="col-12">
-          <div class="grid-row">
-            <img class="how__image col-12" src="assets/ip-image.png" alt="">
-            <h2 class="col-12">Tailscale makes secure networking easy</h2>
-            <p class="col-12">
+          <div class="how__content grid-row no-gutter">
+            <img class="how__image mb-6" src="assets/ip-image.png" alt="">
+            <h2 class="mb-2">Tailscale makes secure networking easy</h2>
+            <p class="mb-6">
               Achieve point-to-point network connectivity that enforces least privilege.
             </p>
           </div>
@@ -199,132 +194,130 @@
       </div>
     </section>
 
-    <section id="features" class="mbt-64">
-      <div class="container-fluid">
-        <div class="grid-row">
-          <div class="card__wrapper">
-            <div class="card__content">
-              <h3>Deploy a zero-config, no-fuss VPN</h3>
-              <p>
-                Deploy a WireGuard@-based VPN that eliminates single points of
-                failure.
-              </p>
-              <a class="btn btn--underline" href="javascript:;">Business VPN</a>
-            </div>
-            <div class="card-image">
-              <img src="assets\Feature Sections\7d0130ecdd01b48ade3f864b8465d603b3f28c89-1280x584.svg" alt="" />
-            </div>
+    <section class="features container-fluid">
+      <div class="grid-row no-gutter">
+        <div class="card__wrapper">
+          <div class="card__content">
+            <h3 class="mb-2">Deploy a zero-config, no-fuss VPN</h3>
+            <p class="mb-4">
+              Deploy a WireGuard@-based VPN that eliminates single points of
+              failure.
+            </p>
+            <a class="btn btn--underline mb-10" href="javascript:;">Business VPN</a>
           </div>
-          <div class="card__wrapper">
-            <div class="card__content">
-              <h3>Securely access resources
-                on any infrastructure</h3>
-              <p>
-                Granularly segment your network to ensure the right users get access to the
-                right resources.
-              </p>
-              <a class="btn btn--underline" href="javascript:;">Remote Access</a>
-            </div>
-            <div class="card-image">
-              <img src="assets\Feature Sections\2aff9e711ae845bedfb1fc1db4bf12d01ffc219d-1280x584.svg" alt="" />
-            </div>
+          <div class="card__image mb-20">
+            <img src="assets\Feature Sections\7d0130ecdd01b48ade3f864b8465d603b3f28c89-1280x584.svg" alt="" />
           </div>
-          <div class="card__wrapper">
-            <div class="card__content">
-              <h3>Unlock site-to-site networking</h3>
-              <p>
-                Connect clouds, VPCs, and on-premises networks without opening firewall ports
-                with NAT traversal.
-              </p>
-              <a class="btn btn--underline" href="javascript:;">Site-to-Site Networking</a>
-            </div>
-            <div class="card-image">
-              <img src="assets\Feature Sections\3316fb3b6301a9160b5456ee5b88cc7a55223492-1280x584.svg" alt="" />
-            </div>
+        </div>
+        <div class="card__wrapper">
+          <div class="card__content">
+            <h3 class="mb-2">Securely access resources
+              on any infrastructure</h3>
+            <p class="mb-4">
+              Granularly segment your network to ensure the right users get access to the
+              right resources.
+            </p>
+            <a class="btn btn--underline mb-10" href="javascript:;">Remote Access</a>
           </div>
-          <div class="card__wrapper">
-            <div class="card__content">
-              <h3>Tailscale for Enterprise</h3>
-              <p>
-                Gain the tools to protect enterprises of any scale with automated user onboarding, SSH
-                session recording, and audit log streaming.
-              </p>
-              <a class="btn btn--underline" href="javascript:;">Enterprise</a>
-            </div>
-            <div class="card-image">
-              <img src="assets\Feature Sections\481ad859f0d7ae07295066a7b655588b1069ab1c-1280x584.svg" alt="" />
-            </div>
+          <div class="card__image mb-20">
+            <img src="assets\Feature Sections\2aff9e711ae845bedfb1fc1db4bf12d01ffc219d-1280x584.svg" alt="" />
+          </div>
+        </div>
+        <div class="card__wrapper">
+          <div class="card__content">
+            <h3 class="mb-2">Unlock site-to-site networking</h3>
+            <p class="mb-4">
+              Connect clouds, VPCs, and on-premises networks without opening firewall ports
+              with NAT traversal.
+            </p>
+            <a class="btn btn--underline mb-10" href="javascript:;">Site-to-Site Networking</a>
+          </div>
+          <div class="card__image mb-20">
+            <img src="assets\Feature Sections\3316fb3b6301a9160b5456ee5b88cc7a55223492-1280x584.svg" alt="" />
+          </div>
+        </div>
+        <div class="card__wrapper">
+          <div class="card__content">
+            <h3 class="mb-2">Tailscale for Enterprise</h3>
+            <p class="mb-4">
+              Gain the tools to protect enterprises of any scale with automated user onboarding, SSH
+              session recording, and audit log streaming.
+            </p>
+            <a class="btn btn--underline mb-10" href="javascript:;">Enterprise</a>
+          </div>
+          <div class="card__image mb-20">
+            <img src="assets\Feature Sections\481ad859f0d7ae07295066a7b655588b1069ab1c-1280x584.svg" alt="" />
           </div>
         </div>
       </div>
+
     </section>
 
-    <section id="integrations" class="mbt-64">
-      <div class="container-fluid">
-        <div class="grid-row">
-          <div class="integrations__title col-12">
-            <h2>
-              100+ integrations means you can incorporate Tailscale
-              <span>into any workflow</span>
-            </h2>
-          </div>
+    <section class="integrations container-fluid mt-20">
+      <div class="grid-row">
+        <div class="integrations__title col-12 mb-16">
+          <h3>
+            100+ integrations means you can incorporate Tailscale
+            <span>into any workflow</span>
+          </h3>
+        </div>
 
-          <div class="integrations__grid__wrap col-12">
-            <div class="integrations__grid">
-              <div class="grid__wrapper">
-                <div class="grid__integrations left">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\f2165c578beeb00eba8d8ab9b9f497582ef5561d-140x141.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\fd5ace20704ee1d1d3c7473da3acf37ebfb68c87-140x140.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\f4b2bfcd48f641a22e730f56b3765bff3da95f9a-139x140.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\84e489c54a18b9181288defb3baa52596a4fe31d-139x140.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\a0f70705d8af722299490b8c32b19fe65faa8afb-139x140.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\040a7fa9084571d9180dc0859ae8811dcf538a3f-139x140.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\73caae2d6b96ebcdaad6c832c75937afa93c1a17-139x140.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\b874dfeb68a63d08282a12c7de4a5bbb487face2-139x140.svg" alt="">
-                  <img class="grid__item" src="assets\frame_grid.svg" alt="">
-                  <div class="grid__empty"></div>
-                </div>
-                <div class="grid__center">
-                  <img class="grid__item" src="assets/icon/favicon.png" alt="">
-                </div>
-                <div class="grid__integrations right">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\4a4487a99a1409efc76acbd2b56dc3094621f5e4-140x140.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\7429e3ada9a6a8bfb7c86fd39d76e0761ec1fbcf-139x140.svg" alt="">
-                  <img class="grid__item" src="assets\frame_grid.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\624220f941f37ebb8df84fcb33cc54c49894030a-139x140.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\48a861b5427f501ef828283d4e557ec07aa7f9ff-140x140.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\38611ffd97c4bc3c4356ea5204165c4f60b63de0-139x140.svg" alt="">
-                  <img class="grid__item" src="assets\frame_grid.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\acb02cdab82fe85fc5cd9b1701e3360485d5944e-139x140.svg" alt="">
-                  <img class="grid__item"
-                    src="assets\Integrations Section\4b164d99596fff05ec355459e5260254fa0b5c87-140x140.svg" alt="">
-                </div>
+        <div class="integrations__grid__wrap col-12 mb-16">
+          <div class="integrations__grid">
+            <div class="grid__wrapper">
+              <div class="grid__integrations left">
+                <img class="grid__item"
+                  src="assets\Integrations Section\f2165c578beeb00eba8d8ab9b9f497582ef5561d-140x141.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\fd5ace20704ee1d1d3c7473da3acf37ebfb68c87-140x140.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\f4b2bfcd48f641a22e730f56b3765bff3da95f9a-139x140.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\84e489c54a18b9181288defb3baa52596a4fe31d-139x140.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\a0f70705d8af722299490b8c32b19fe65faa8afb-139x140.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\040a7fa9084571d9180dc0859ae8811dcf538a3f-139x140.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\73caae2d6b96ebcdaad6c832c75937afa93c1a17-139x140.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\b874dfeb68a63d08282a12c7de4a5bbb487face2-139x140.svg" alt="">
+                <img class="grid__item" src="assets\frame_grid.svg" alt="">
+                <div class="grid__empty"></div>
+              </div>
+              <div class="grid__center">
+                <img class="grid__item" src="assets/icon/favicon.png" alt="">
+              </div>
+              <div class="grid__integrations right">
+                <img class="grid__item"
+                  src="assets\Integrations Section\4a4487a99a1409efc76acbd2b56dc3094621f5e4-140x140.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\7429e3ada9a6a8bfb7c86fd39d76e0761ec1fbcf-139x140.svg" alt="">
+                <img class="grid__item" src="assets\frame_grid.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\624220f941f37ebb8df84fcb33cc54c49894030a-139x140.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\48a861b5427f501ef828283d4e557ec07aa7f9ff-140x140.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\38611ffd97c4bc3c4356ea5204165c4f60b63de0-139x140.svg" alt="">
+                <img class="grid__item" src="assets\frame_grid.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\acb02cdab82fe85fc5cd9b1701e3360485d5944e-139x140.svg" alt="">
+                <img class="grid__item"
+                  src="assets\Integrations Section\4b164d99596fff05ec355459e5260254fa0b5c87-140x140.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="integrations__cta col-xxl-12">
-            <div class="grid-row">
-              <a class="btn btn--primary--arrow" href="javascript:;">Operating systems</a>
-              <a class="btn btn--underline" href="javascript:;">Identity providers</a>
-              <a class="btn btn--underline" href="javascript:;">Get started with AWS</a>
-            </div>
+        </div>
+        <div class="integrations__cta col-12">
+          <div class="grid-row">
+            <a class="btn btn--primary--arrow" href="javascript:;">Operating systems</a>
+            <a class="btn btn--underline" href="javascript:;">Identity providers</a>
+            <a class="btn btn--underline" href="javascript:;">Get started with AWS</a>
           </div>
         </div>
-        <!-- <div class="grid-row">
+      </div>
+      <!-- <div class="grid-row">
           <div class="col-md-12">
             <div class="wrap__integration">
               <div class="grid-row">
@@ -367,40 +360,37 @@
             </div>
           </div>
         </div> -->
-      </div>
     </section>
 
-    <section id="homelab">
-      <div class="container-fluid">
-        <div class="grid-row">
-          <div class="homelab__contents col-12">
-            <div class="grid-row">
-              <p>Homelab</p>
-              <h2>Your home away from home</h2>
-              <p>
-                Access your homelab, personal devices, and dev environments wherever
-                you are — for free.
-              </p>
-            </div>
+    <section class="homelab container-fluid mt-20">
+      <div class="grid-row">
+        <div class="homelab__contents col-12">
+          <div class="grid-row no-gutter">
+            <p class="mb-2">Homelab</p>
+            <h3 class="mb-4">Your home away from home</h3>
+            <p class="mb-8">
+              Access your homelab, personal devices, and dev environments wherever
+              you are — for free.
+            </p>
           </div>
-          <div class="homelab__cta col-12">
-            <div class="grid-row">
-              <a class="btn btn--primary--arrow" href="javascript:;">Download for free</a>
-              <a class="btn btn--underline" href="javascript:;">Learn more</a>
-            </div>
+        </div>
+        <div class="homelab__cta col-12 mb-8">
+          <div class="grid-row no-gutter">
+            <a class="btn btn--primary--arrow" href="javascript:;">Download for free</a>
+            <a class="btn btn--underline" href="javascript:;">Learn more</a>
           </div>
-          <div class="homelab__image col-12">
-            <img src="assets/bg-green-circle.svg" alt="" />
-          </div>
+        </div>
+        <div class="homelab__image col-12">
+          <img src="assets/bg-green-circle.svg" alt="" />
         </div>
       </div>
     </section>
 
-    <section id="testimonial">
+    <section class="testimonial">
       <div class="carousel">
-        <div class="card--wrapper__left">
+        <div class="card--wrapper__left mt-20">
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile1.png" alt="" />
               </div>
@@ -428,7 +418,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile2.png" alt="" />
               </div>
@@ -458,7 +448,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile3.png" alt="" />
               </div>
@@ -486,7 +476,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile4.png" alt="" />
               </div>
@@ -513,7 +503,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile5.png" alt="" />
               </div>
@@ -542,7 +532,7 @@
           </div>
           <!-- * Duplicated card -->
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile1.png" alt="" />
               </div>
@@ -570,7 +560,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile2.png" alt="" />
               </div>
@@ -600,7 +590,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile3.png" alt="" />
               </div>
@@ -628,7 +618,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile4.png" alt="" />
               </div>
@@ -655,7 +645,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile5.png" alt="" />
               </div>
@@ -683,9 +673,9 @@
             </div>
           </div>
         </div>
-        <div class="card--wrapper__right">
+        <div class="card--wrapper__right mt-6 mb-6">
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile6.png" alt="" />
               </div>
@@ -713,7 +703,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile7.png" alt="" />
               </div>
@@ -743,7 +733,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile8.png" alt="" />
               </div>
@@ -771,7 +761,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile9.png" alt="" />
               </div>
@@ -798,7 +788,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile10.png" alt="" />
               </div>
@@ -827,7 +817,7 @@
           </div>
           <!-- * Duplicated card -->
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile6.png" alt="" />
               </div>
@@ -855,7 +845,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile7.png" alt="" />
               </div>
@@ -885,7 +875,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile8.png" alt="" />
               </div>
@@ -913,7 +903,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile9.png" alt="" />
               </div>
@@ -940,7 +930,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile10.png" alt="" />
               </div>
@@ -968,9 +958,9 @@
             </div>
           </div>
         </div>
-        <div class="card--wrapper__left">
+        <div class="card--wrapper__left mb-20">
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile11.png" alt="" />
               </div>
@@ -998,7 +988,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile12.png" alt="" />
               </div>
@@ -1028,7 +1018,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile13.png" alt="" />
               </div>
@@ -1056,7 +1046,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile14.png" alt="" />
               </div>
@@ -1083,7 +1073,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile15.png" alt="" />
               </div>
@@ -1112,7 +1102,7 @@
           </div>
           <!-- * Duplicated card -->
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile11.png" alt="" />
               </div>
@@ -1140,7 +1130,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile12.png" alt="" />
               </div>
@@ -1170,7 +1160,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile13.png" alt="" />
               </div>
@@ -1198,7 +1188,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile14.png" alt="" />
               </div>
@@ -1225,7 +1215,7 @@
             </div>
           </div>
           <div class="card">
-            <div class="card__pfp row">
+            <div class="card__pfp grid-row">
               <div class="card__profile">
                 <img src="assets/pfp-splash/unsplash-profile15.png" alt="" />
               </div>
@@ -1258,214 +1248,203 @@
         </div>
     </section>
 
-    <section id="core-benefits">
-      <div class="container-fluid">
-        <div class="core__title">
-          <h2>Simple, powerful, and reliable</h2>
-        </div>
-        <div class="benefit">
-          <div class="grid-row">
-            <div class="core__card--wrapper col-4 col-xl-6 col-md-12">
-              <div class="core__header col-12">
-                <img src="assets/71f614d92af4821e1c55ec43e61d0df7df305424-138x103.svg" alt="" />
-                <h3>Quick deployment</h3>
-                <p>Establish private networks in minutes
-                  and push out Tailscale to users without
-                  having to configure every device.</p>
-              </div>
-              <div class="core__sub col-12">
-                <div class="core__content">
-                  <h4>3 mins</h4>
-                  <p>to set up your network</p>
-                </div>
+    <section class="core-benefits container-fluid mbt-20">
+      <div class="core__title">
+        <h2>Simple, powerful, and reliable</h2>
+      </div>
+      <div class="benefit">
+        <div class="grid-row">
+          <div class="core__card--wrapper col-4 col-xl-6 col-md-12">
+            <div class="core__header col-12">
+              <img src="assets/71f614d92af4821e1c55ec43e61d0df7df305424-138x103.svg" alt="" />
+              <h3>Quick deployment</h3>
+              <p>Establish private networks in minutes
+                and push out Tailscale to users without
+                having to configure every device.</p>
+            </div>
+            <div class="core__sub col-12">
+              <div class="core__content">
+                <h4>3 mins</h4>
+                <p>to set up your network</p>
               </div>
             </div>
-            <div class="core__card--wrapper col-4 col-xl-6 col-md-12">
-              <div class="core__header col-12">
-                <img src="assets/c4d3b72947b9f9359f2a3c2bbc20b3ae3ebed0bf-138x103.svg" alt="" />
-                <h3>Infrastructure agnostic</h3>
-                <p>Tailscale works wherever you do, on
-                  any platform, service, or runtime,
-                  anywhere.</p>
-              </div>
-              <div class="core__sub col-12">
-                <div class="core__content">
-                  <h4>2.5m</h4>
-                  <p>devices connected</p>
-                </div>
+          </div>
+          <div class="core__card--wrapper col-4 col-xl-6 col-md-12">
+            <div class="core__header col-12">
+              <img src="assets/c4d3b72947b9f9359f2a3c2bbc20b3ae3ebed0bf-138x103.svg" alt="" />
+              <h3>Infrastructure agnostic</h3>
+              <p>Tailscale works wherever you do, on
+                any platform, service, or runtime,
+                anywhere.</p>
+            </div>
+            <div class="core__sub col-12">
+              <div class="core__content">
+                <h4>2.5m</h4>
+                <p>devices connected</p>
               </div>
             </div>
-            <div class="core__card--wrapper col-4 col-xl-6 col-md-12">
-              <div class="core__header col-12">
-                <img src="assets/53da8fed443bccea69db6b8d3bf98126cd5d80d0-138x103.svg" alt="" />
-                <h3>Secure by default</h3>
-                <p>Authorize which resources are
-                  accessible to users, roles, or groups
-                  with grants and Access Control Lists
-                  (ACLs).</p>
-              </div>
-              <div class="core__sub col-12">
-                <div class="core__content">
-                  <h4>10k+</h4>
-                  <p>companies running Tailscale</p>
-                </div>
+          </div>
+          <div class="core__card--wrapper col-4 col-xl-6 col-md-12">
+            <div class="core__header col-12">
+              <img src="assets/53da8fed443bccea69db6b8d3bf98126cd5d80d0-138x103.svg" alt="" />
+              <h3>Secure by default</h3>
+              <p>Authorize which resources are
+                accessible to users, roles, or groups
+                with grants and Access Control Lists
+                (ACLs).</p>
+            </div>
+            <div class="core__sub col-12">
+              <div class="core__content">
+                <h4>10k+</h4>
+                <p>companies running Tailscale</p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
-    <section id="security">
-      <div class="container-fluid">
-        <div class="grid-row">
-          <div class="security__content col-6 col-lg-12">
-            <h2>Our commitment to security</h2>
-            <p>
-              We are committed to always safeguarding your data. Every
-              connection is encrypted end-to-end using WireGuard@, a modern VPN
-              protocol designed for usability, performance, and security. Stay
-              up-to-date on updates via our security bulletin below.
+    <section class="security container-fluid pt-12 pb-12">
+      <div class="grid-row">
+        <div class="security__content col-6 col-lg-12">
+          <h3>Our commitment to security</h3>
+          <p class="mb-2">
+            We are committed to always safeguarding your data. Every
+            connection is encrypted end-to-end using WireGuard@, a modern VPN
+            protocol designed for usability, performance, and security. Stay
+            up-to-date on updates via our security bulletin below.
+          </p>
+          <div class="security__cta grid-row no-gutter">
+            <a class="btn btn--primary--arrow" href="javascript:;">Learn more</a>
+            <a class="btn btn--underline" href="javascript:;">Security bulletins</a>
+          </div>
+        </div>
+        <div class="security__list col-5 col-xl-6 grid-row">
+          <div class="list__primary col-6 col-lg-12">
+            <div class="security__card">
+              <img src="assets/91e48b4514e8c5beb3583fb6810d214c040fd350-180x211.svg" alt="">
+            </div>
+            <div class="security__card">
+              <img src="assets/6d6337bac55bab4d05b49b4dcc40c6b11e8c5907-180x212.svg" alt="">
+            </div>
+            <div class="security__card">
+              <img src="assets/eccd917b4275e52b4acbac120c8e25e4b3869063-180x212.svg" alt="">
+            </div>
+          </div>
+          <div class="list__secondary col-6 col-lg-12">
+            <div class="security__card">
+              <img src="assets/f45caa9b380058aabbd7be47c484eb94888ff36c-180x211.svg" alt="">
+            </div>
+            <div class="security__card">
+              <img src="assets/7c081b956070e21ef707e825da90793c43d3d76d-180x212.svg" alt="">
+            </div>
+            <div class="security__card">
+              <img src="assets/48f907c3c098142c7f979757e64a94fb405c5ce4-180x212.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="list__primary card--row col-6 col-lg-12 col-sm-12">
+          <div class="security__card">
+            <img src="assets/91e48b4514e8c5beb3583fb6810d214c040fd350-180x211.svg" alt="">
+          </div>
+          <div class="security__card">
+            <img src="assets/6d6337bac55bab4d05b49b4dcc40c6b11e8c5907-180x212.svg" alt="">
+          </div>
+          <div class="security__card">
+            <img src="assets/eccd917b4275e52b4acbac120c8e25e4b3869063-180x212.svg" alt="">
+          </div>
+        </div>
+        <div class="list__secondary card--row col-6 col-lg-12 col-sm-12">
+          <div class="security__card">
+            <img src="assets/f45caa9b380058aabbd7be47c484eb94888ff36c-180x211.svg" alt="">
+          </div>
+          <div class="security__card">
+            <img src="assets/7c081b956070e21ef707e825da90793c43d3d76d-180x212.svg" alt="">
+          </div>
+          <div class="security__card">
+            <img src="assets/48f907c3c098142c7f979757e64a94fb405c5ce4-180x212.svg" alt="">
+          </div>
+        </div>
+        <div class="list__primary card--row--2 col-md-12">
+          <div class="security__card">
+            <img src="assets/91e48b4514e8c5beb3583fb6810d214c040fd350-180x211.svg" alt="">
+          </div>
+          <div class="security__card">
+            <img src="assets/6d6337bac55bab4d05b49b4dcc40c6b11e8c5907-180x212.svg" alt="">
+          </div>
+        </div>
+        <div class="list__secondary card--row--2 col-md-12">
+          <div class="security__card">
+            <img src="assets/eccd917b4275e52b4acbac120c8e25e4b3869063-180x212.svg" alt="">
+          </div>
+          <div class="security__card">
+            <img src="assets/f45caa9b380058aabbd7be47c484eb94888ff36c-180x211.svg" alt="">
+          </div>
+        </div>
+        <div class="list__primary card--row--2 col-md-12">
+          <div class="security__card">
+            <img src="assets/7c081b956070e21ef707e825da90793c43d3d76d-180x212.svg" alt="">
+          </div>
+          <div class="security__card">
+            <img src="assets/48f907c3c098142c7f979757e64a94fb405c5ce4-180x212.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick__start container-fluid mbt-20">
+      <div class="grid-row">
+        <div class="workflow__content col-8 col-lg-12">
+          <div class="workflow__inner">
+            <h2>Fits into your preferred workflow</h2>
+            <p class="mt-2 mb-5">
+              With 100+ integrations, Tailscale works with all your favorite
+              tools. Provision resources that automatically join the tailnet
+              using Terraform or Pulumi. Integrate policy management into your
+              existing GitOps workflow. Our docs will help you get started on
+              building your tailnet today.
             </p>
-            <div class="security__cta">
-              <a class="btn btn--primary--arrow" href="javascript:;">Learn more</a>
-              <a class="btn btn--underline" href="javascript:;">Security bulletins</a>
-            </div>
+            <a class="btn btn--secondary" href="javascript:;">See docs</a>
+            <img src="assets/527b93e1e1c9b63f0f7b90a8ac60886f462f0794-790x215.svg" alt="" />
           </div>
-          <div class="security__list col-5 col-xl-6 row">
-            <div class="list__primary col-6 col-lg-12">
-              <div class="security__card">
-                <img src="assets/91e48b4514e8c5beb3583fb6810d214c040fd350-180x211.svg" alt="">
-              </div>
-              <div class="security__card">
-                <img src="assets/6d6337bac55bab4d05b49b4dcc40c6b11e8c5907-180x212.svg" alt="">
-              </div>
-              <div class="security__card">
-                <img src="assets/eccd917b4275e52b4acbac120c8e25e4b3869063-180x212.svg" alt="">
-              </div>
-            </div>
-            <div class="list__secondary col-6 col-lg-12">
-              <div class="security__card">
-                <img src="assets/f45caa9b380058aabbd7be47c484eb94888ff36c-180x211.svg" alt="">
-              </div>
-              <div class="security__card">
-                <img src="assets/7c081b956070e21ef707e825da90793c43d3d76d-180x212.svg" alt="">
-              </div>
-              <div class="security__card">
-                <img src="assets/48f907c3c098142c7f979757e64a94fb405c5ce4-180x212.svg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="list__primary card--row col-6 col-lg-12 col-sm-12">
-            <div class="security__card">
-              <img src="assets/91e48b4514e8c5beb3583fb6810d214c040fd350-180x211.svg" alt="">
-            </div>
-            <div class="security__card">
-              <img src="assets/6d6337bac55bab4d05b49b4dcc40c6b11e8c5907-180x212.svg" alt="">
-            </div>
-            <div class="security__card">
-              <img src="assets/eccd917b4275e52b4acbac120c8e25e4b3869063-180x212.svg" alt="">
-            </div>
-          </div>
-          <div class="list__secondary card--row col-6 col-lg-12 col-sm-12">
-            <div class="security__card">
-              <img src="assets/f45caa9b380058aabbd7be47c484eb94888ff36c-180x211.svg" alt="">
-            </div>
-            <div class="security__card">
-              <img src="assets/7c081b956070e21ef707e825da90793c43d3d76d-180x212.svg" alt="">
-            </div>
-            <div class="security__card">
-              <img src="assets/48f907c3c098142c7f979757e64a94fb405c5ce4-180x212.svg" alt="">
-            </div>
-          </div>
-          <div class="list__primary card--row--2 col-md-12">
-            <div class="security__card">
-              <img src="assets/91e48b4514e8c5beb3583fb6810d214c040fd350-180x211.svg" alt="">
-            </div>
-            <div class="security__card">
-              <img src="assets/6d6337bac55bab4d05b49b4dcc40c6b11e8c5907-180x212.svg" alt="">
-            </div>
-          </div>
-          <div class="list__secondary card--row--2 col-md-12">
-            <div class="security__card">
-              <img src="assets/eccd917b4275e52b4acbac120c8e25e4b3869063-180x212.svg" alt="">
-            </div>
-            <div class="security__card">
-              <img src="assets/f45caa9b380058aabbd7be47c484eb94888ff36c-180x211.svg" alt="">
-            </div>
-          </div>
-          <div class="list__primary card--row--2 col-md-12">
-            <div class="security__card">
-              <img src="assets/7c081b956070e21ef707e825da90793c43d3d76d-180x212.svg" alt="">
-            </div>
-            <div class="security__card">
-              <img src="assets/48f907c3c098142c7f979757e64a94fb405c5ce4-180x212.svg" alt="">
-            </div>
+        </div>
+        <div class="guide__content col-4 col-lg-12">
+          <img src="assets/1356c41503382f05f78366329d62b84d62e4fb75-400x430.svg" alt="" />
+          <div class="guide__cta mt-4">
+            <a href="javascript:;">
+              <p>GUIDES</p>
+              <h3 class="mb-4 mt-2">Tailscale quickstart guide</h3>
+              <a class="btn btn--underline" href="javascript:;">Read guide</a>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="quick-start">
-      <div class="container-fluid">
-        <div class="grid-row">
-          <div class="workflow col-8 col-lg-12">
-            <div class="workflow__content">
-              <h2>Fits into your preferred workflow</h2>
-              <p>
-                With 100+ integrations, Tailscale works with all your favorite
-                tools. Provision resources that automatically join the tailnet
-                using Terraform or Pulumi. Integrate policy management into your
-                existing GitOps workflow. Our docs will help you get started on
-                building your tailnet today.
-              </p>
-              <a class="btn btn--secondary" href="javascript:;">See docs</a>
-              <img src="assets/527b93e1e1c9b63f0f7b90a8ac60886f462f0794-790x215.svg" alt="" />
+    <section class="try-tailscale container-fluid">
+      <div class="grid-row no-gutter">
+        <div class="try__card col-6 col-lg-12">
+          <div class="grid-row">
+            <div class="try__header col-12">
+              <h2>Try Tailscale for <span>free</span></h2>
+              <a class="btn btn--secondary" href="javascript:;">Get started</a>
+              <div class="try__logo">
+                <img src="assets/77e0f6c7-652a-41b8-a099-8f74d24560c1.svg" alt="">
+              </div>
             </div>
-          </div>
-          <div class="guide col-4 col-lg-12">
-            <div class="guide__image">
-              <img src="assets/1356c41503382f05f78366329d62b84d62e4fb75-400x430.svg" alt="" />
-            </div>
-            <div class="guide__cta">
-              <a href="javascript:;">
-                <p>GUIDES</p>
-                <h2>Tailscale quickstart guide</h2>
-                <a class="btn btn--underline" href="javascript:;">Read guide</a>
-              </a>
+            <div class="try__cta col-12">
+              <div class="try__content">
+                <p>Schedule a demo</p>
+                <a class="btn btn--primary" href="javascript:;">Contact sales</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="try-tailscale">
-      <div class="container-fluid">
-        <div class="grid-row">
-          <div class="try__card col-6 col-lg-12">
+        <div class="demo__preview col-6 col-lg-12">
+          <div class="demo__image">
             <div class="grid-row">
-              <div class="try__header col-12">
-                <h2>Try Tailscale for <span>free</span></h2>
-                <a class="btn btn--secondary" href="javascript:;">Get started</a>
-                <div class="try__logo">
-                  <img src="assets/77e0f6c7-652a-41b8-a099-8f74d24560c1.svg" alt="">
-                </div>
-              </div>
-              <div class="try__cta col-12">
-                <div class="try__content">
-                  <p>Schedule a demo</p>
-                  <a class="btn btn--primary" href="javascript:;">Contact sales</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="demo__preview col-6 col-lg-12">
-            <div class="demo__image">
-              <div class="grid-row">
-                <div class="image__wrapper">
-                  <img src="assets/b715b4ca5e2577da60f0d529a4a9bc2ad4cadf59-362x567.svg" alt="" />
-                </div>
+              <div class="image__wrapper">
+                <img src="assets/b715b4ca5e2577da60f0d529a4a9bc2ad4cadf59-362x567.svg" alt="" />
               </div>
             </div>
           </div>
@@ -1473,194 +1452,154 @@
       </div>
     </section>
 
-    <section id="sponsor-logo">
-      <div class="carousel">
-        <div class="card--wrapper__right">
-          <div class="card__client">
-            <img src="assets/hero/10004.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10006.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10007.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10008.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10009.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10010.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10013.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10014.svg" alt="">
-          </div>
-
-          <!-- * Duplicated card -->
-
-          <div class="card__client">
-            <img src="assets/hero/10004.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10006.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10007.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10008.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10009.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10010.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10013.svg" alt="">
-          </div>
-          <div class="card__client">
-            <img src="assets/hero/10014.svg" alt="">
-          </div>
+    <section class="partner container-fluid">
+      <div class="partner__card">
+        <div class="card__client">
+          <img src="assets/hero/10004.svg" alt="">
+        </div>
+        <div class="card__client">
+          <img src="assets/hero/10007.svg" alt="">
+        </div>
+        <div class="card__client">
+          <img src="assets/hero/10010.svg" alt="">
+        </div>
+        <div class="card__client">
+          <img src="assets/hero/10013.svg" alt="">
+        </div>
+        <div class="card__client">
+          <img src="assets/hero/10014.svg" alt="">
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container-fluid">
-      <div class="footer__top">
-        <div class="grid-row">
-          <div class="col-2 col-sm-10 col-md-6 col-lg-4">
-            <div class="footer__header">
-              <h4>Product</h4>
-            </div>
-            <div>
-              <ul>
-                <li><a href="javascript:;">How it works</a></li>
-                <li><a href="javascript:;">Pricing</a></li>
-                <li><a href="javascript:;">Integrations</a></li>
-                <li><a href="javascript:;">Features</a></li>
-                <li><a href="javascript:;">Compare Tailscale</a></li>
-              </ul>
-            </div>
+  <footer class="container-fluid mt-4">
+    <div class="footer__top mbt-8">
+      <div class="grid-row">
+        <div class="col-2 col-sm-10 col-md-6 col-lg-4">
+          <div class="footer__header">
+            <h4>Product</h4>
           </div>
-
-          <div class="col-2 col-sm-10 col-md-6 col-lg-4">
-            <div class="footer__header">
-              <h4>Use Cases</h4>
-            </div>
-            <div>
-              <ul>
-                <li><a href="javascript:;">Business VPN</a></li>
-                <li><a href="javascript:;">Remote Access</a></li>
-                <li><a href="javascript:;">Site-to-Site Networking</a></li>
-                <li><a href="javascript:;">Homelab</a></li>
-                <li><a href="javascript:;">Enterprise</a></li>
-              </ul>
-            </div>
+          <div class="footer__content">
+            <ul>
+              <li><a href="javascript:;">How it works</a></li>
+              <li><a href="javascript:;">Pricing</a></li>
+              <li><a href="javascript:;">Integrations</a></li>
+              <li><a href="javascript:;">Features</a></li>
+              <li><a href="javascript:;">Compare Tailscale</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="col-2 col-sm-10 col-md-6 col-lg-4">
-            <div class="footer__header">
-              <h4>Resources</h4>
-            </div>
-            <div>
-              <ul>
-                <li><a href="javascript:;">Blog</a></li>
-                <li><a href="javascript:;">Events & Webinars</a></li>
-                <li><a href="javascript:;">Partnerships</a></li>
-              </ul>
-            </div>
+        <div class="col-2 col-sm-10 col-md-6 col-lg-4">
+          <div class="footer__header">
+            <h4>Use Cases</h4>
           </div>
-
-          <div class="col-2 col-sm-10 col-md-6 col-lg-4">
-            <div class="footer__header">
-              <h4>Company</h4>
-            </div>
-            <div>
-              <ul>
-                <li><a href="javascript:;">Company</a></li>
-                <li><a href="javascript:;">Careers</a></li>
-                <li><a href="javascript:;">Press</a></li>
-              </ul>
-            </div>
+          <div class="footer__content">
+            <ul>
+              <li><a href="javascript:;">Business VPN</a></li>
+              <li><a href="javascript:;">Remote Access</a></li>
+              <li><a href="javascript:;">Site-to-Site Networking</a></li>
+              <li><a href="javascript:;">Homelab</a></li>
+              <li><a href="javascript:;">Enterprise</a></li>
+            </ul>
           </div>
+        </div>
 
-          <div class="col-2 col-sm-10 col-md-6 col-lg-4">
-            <div class="footer__header">
-              <h4>Help & Support</h4>
-            </div>
-            <div>
-              <ul>
-                <li><a href="javascript:;">Support</a></li>
-                <li><a href="javascript:;">Sales</a></li>
-                <li><a href="javascript:;">Security</a></li>
-                <li><a href="javascript:;">Legal</a></li>
-                <li><a href="javascript:;">Open Source</a></li>
-                <li><a href="javascript:;">Changelog</a></li>
-                <li><a href="javascript:;">Tailscale Status</a></li>
-              </ul>
-            </div>
+        <div class="col-2 col-sm-10 col-md-6 col-lg-4">
+          <div class="footer__header">
+            <h4>Resources</h4>
           </div>
+          <div class="footer__content">
+            <ul>
+              <li><a href="javascript:;">Blog</a></li>
+              <li><a href="javascript:;">Events & Webinars</a></li>
+              <li><a href="javascript:;">Partnerships</a></li>
+            </ul>
+          </div>
+        </div>
 
-          <div class="col-2 col-sm-10 col-md-6 col-lg-4">
-            <div class="footer__header">
-              <h4>Learn</h4>
-            </div>
-            <div>
-              <ul>
-                <li><a href="javascript:;">SSH keys</a></li>
-                <li><a href="javascript:;">Docker SSH</a></li>
-                <li><a href="javascript:;">DevSecOps</a></li>
-                <li><a href="javascript:;">Multicloud</a></li>
-                <li><a href="javascript:;">NAT Traversal</a></li>
-                <li><a href="javascript:;">MagicDNS</a></li>
-                <li><a href="javascript:;">PAM</a></li>
-                <li><a href="javascript:;">PoLP</a></li>
-                <li><a href="javascript:;">All articles</a></li>
-              </ul>
-            </div>
+        <div class="col-2 col-sm-10 col-md-6 col-lg-4">
+          <div class="footer__header">
+            <h4>Company</h4>
+          </div>
+          <div class="footer__content">
+            <ul>
+              <li><a href="javascript:;">Company</a></li>
+              <li><a href="javascript:;">Careers</a></li>
+              <li><a href="javascript:;">Press</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-2 col-sm-10 col-md-6 col-lg-4">
+          <div class="footer__header">
+            <h4>Help & Support</h4>
+          </div>
+          <div class="footer__content">
+            <ul>
+              <li><a href="javascript:;">Support</a></li>
+              <li><a href="javascript:;">Sales</a></li>
+              <li><a href="javascript:;">Security</a></li>
+              <li><a href="javascript:;">Legal</a></li>
+              <li><a href="javascript:;">Open Source</a></li>
+              <li><a href="javascript:;">Changelog</a></li>
+              <li><a href="javascript:;">Tailscale Status</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-2 col-sm-10 col-md-6 col-lg-4">
+          <div class="footer__header">
+            <h4>Learn</h4>
+          </div>
+          <div class="footer__content">
+            <ul>
+              <li><a href="javascript:;">SSH keys</a></li>
+              <li><a href="javascript:;">Docker SSH</a></li>
+              <li><a href="javascript:;">DevSecOps</a></li>
+              <li><a href="javascript:;">Multicloud</a></li>
+              <li><a href="javascript:;">NAT Traversal</a></li>
+              <li><a href="javascript:;">MagicDNS</a></li>
+              <li><a href="javascript:;">PAM</a></li>
+              <li><a href="javascript:;">PoLP</a></li>
+              <li><a href="javascript:;">All articles</a></li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="footer__bottom">
-        <div class="grid-row">
-          <div class="footer__bottom__logo col-3 col-md-4 col-sm-12">
-            <img src="assets/82d72633-5b8a-4f0c-9a6f-220ba75be95a.svg" alt="" />
-          </div>
-          <div class="col-3 col-md-4 col-sm-12">
-            <ul>
-              <li><a href="javascript:;">Terms of Service</a></li>
-              <li><a href="javascript:;">Privacy Policy</a></li>
-              <li><a href="javascript:;">California Notice</a></li>
-              <li><a href="javascript:;">Cookie Notice</a></li>
-              <li><span><img src="assets/icon/07d853f507039b2489d9818cb6ee7442c1b60e2a-30x14.svg" alt=""></span><a
-                  href="javascript:;">Your Privacy
-                  Choices</a></li>
-            </ul>
-          </div>
-          <div class="col-3 col-sm-12">
-            <p>WireGuard is a registered trademark of Jason A. Donenfeld.</p>
-          </div>
-          <div class="footer__social col-2 col-md-12 col-sm-12">
-            <a href="javascript:;"><img src="assets/icon/7052efb9-bcda-441a-a885-a208b5c8fcdb.svg" alt="" /></a>
-            <a href="javascript:;"><img src="assets/icon/0f9055ca-cbe1-4837-a27e-01f91ff3e33e.svg" alt="" /></a>
-            <a href="javascript:;"><img src="assets/icon/19eaa076-478e-4662-a11b-71b4c1d9348f.svg" alt="" /></a>
-            <a href="javascript:;"><img src="assets/icon/e1fe4b50-a058-49ba-9895-474ae7c5f374.svg" alt="" /></a>
-          </div>
-          <div class="footer__copyright col-12">
-            <p>
-              &copy; 2025 Tailscale Inc. All rights reserved. Tailscale is a
-              registered trademark of Tailscale Inc.
-            </p>
-          </div>
+    <div class="footer__bottom">
+      <div class="grid-row">
+        <div class="footer__bottom__logo col-3 col-md-4 col-sm-12 mbt-2">
+          <img src="assets/82d72633-5b8a-4f0c-9a6f-220ba75be95a.svg" alt="" />
+        </div>
+        <div class="col-3 col-md-4 col-sm-12">
+          <ul>
+            <li><a href="javascript:;">Terms of Service</a></li>
+            <li><a href="javascript:;">Privacy Policy</a></li>
+            <li><a href="javascript:;">California Notice</a></li>
+            <li><a href="javascript:;">Cookie Notice</a></li>
+            <li><span><img src="assets/icon/07d853f507039b2489d9818cb6ee7442c1b60e2a-30x14.svg" alt=""></span><a
+                href="javascript:;">Your Privacy
+                Choices</a></li>
+          </ul>
+        </div>
+        <div class="col-3 col-sm-12">
+          <p>WireGuard is a registered trademark of Jason A. Donenfeld.</p>
+        </div>
+        <div class="footer__social col-2 col-md-12 col-sm-12">
+          <a href="javascript:;"><img src="assets/icon/7052efb9-bcda-441a-a885-a208b5c8fcdb.svg" alt="" /></a>
+          <a href="javascript:;"><img src="assets/icon/0f9055ca-cbe1-4837-a27e-01f91ff3e33e.svg" alt="" /></a>
+          <a href="javascript:;"><img src="assets/icon/19eaa076-478e-4662-a11b-71b4c1d9348f.svg" alt="" /></a>
+          <a href="javascript:;"><img src="assets/icon/e1fe4b50-a058-49ba-9895-474ae7c5f374.svg" alt="" /></a>
+        </div>
+        <div class="footer__copyright col-12 mbt-8">
+          <p>
+            &copy; 2025 Tailscale Inc. All rights reserved. Tailscale is a
+            registered trademark of Tailscale Inc.
+          </p>
         </div>
       </div>
   </footer>
