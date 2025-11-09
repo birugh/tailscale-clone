@@ -1,3 +1,83 @@
+/* ! Announcement bar */
+
+.announcement-bar {
+  background-color: var(--carbon_fiber);
+  color: var(--white);
+  text-align: center;
+  padding: 8px 0;
+}
+
+.announcement-bar a {
+  font-weight: 600;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+/* ! Navigation bar */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  background-color: var(--white);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+nav {
+  margin: 12px 0;
+  background-color: var(--white);
+}
+
+.nav__logo img {
+  width: 140px;
+  height: 100%;
+}
+
+.nav__primary ul,
+.nav__secondary ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav__primary ul {
+  justify-content: flex-start;
+}
+
+.nav__secondary ul {
+  justify-content: flex-end;
+}
+
+.nav-mobile-menu {
+  display: none;
+}
+
+/* ! Navigation mobile menu */
+
+.hamburger-menu {
+  width: 24px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu-linear {
+  width: 100%;
+  height: 4px;
+  background-color: var(--carbon_fiber);
+  ;
+  border-radius: 2px;
+}
+
+.nav-mobile-menu {
+  display: none;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -10,6 +90,10 @@
   border: none;
   transition: color .5s ease;
   color: var(--shadow_gargoyle);
+}
+
+.btn--align-start {
+  justify-content: start;
 }
 
 .btn:hover {
@@ -122,4 +206,11 @@
 .nav__btn:focus,
 .nav__btn:hover {
   color: #1e1e1e;
+}
+
+.seperator--horizontal {
+    background-color: var(--coronation);
+    margin: 24px 0;
+    height: 1px;
+    width: 100%;
 }

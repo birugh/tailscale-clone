@@ -13,18 +13,18 @@
     --steel: #7a7a7a;
     --gris: #a4a7aa;
     --shadow_gargoyle: #676767;
+    --coronation: #eeebea;
 
     /* * Blue Colors */
     --fly_by_night: #19224a;
     --guilliman_blue: #6e96ef;
 
+    /* * Others */
+    --old_wine: #940821;
+
     /* * Grid System */
     --columns: 12;
-    --gutter: 64px;
-}
-
-::-webkit-scrollbar {
-    display: none;
+    --gutter: 40px;
 }
 
 * {
@@ -34,10 +34,25 @@
     padding: 0;
 }
 
+::selection {
+    color: var(--lynx_white);
+    background: var(--old_wine);
+}
+
+main {
+    
+}
+
 body {
     background-color: var(--var(--white));
     color: var(--dark-gray);
     line-height: 1.6;
+}
+
+img {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 li {
@@ -55,7 +70,7 @@ a {
 }
 
 h1 {
-    font-size: 82px;
+    font-size: 70px;
     font-weight: 500;
     line-height: 1.1;
 }

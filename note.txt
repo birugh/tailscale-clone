@@ -11,3 +11,32 @@ dibuat jadi beberapa class
 fix font face
 
 infinite card carousel pause
+
+container
+    section
+        row
+            col
+                row
+            col
+        row
+    section
+    section
+        row
+            col
+                row
+                    col
+                        row
+                    col
+                row
+            col
+        row
+    section
+container
+
+independent class (contohnya col harus sendiri)
+
+cari tau lagi tentang row tapi ada gapnya secara otomatis
+
+dorong try make margin
+
+abis make col itu make wrapper baru isi kontennya

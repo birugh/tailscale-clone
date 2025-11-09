@@ -4,28 +4,62 @@
     padding: 0 var(--gutter);
 }
 
-/* ! Lebih spesifik nama classnya */
+.container-wide[class*="pbt-"] {
+    padding-left: calc(var(--gutter) * 5);
+    padding-right: calc(var(--gutter) * 5);
+}
+
 .grid-row {
     display: flex;
     flex-wrap: wrap;
+    /* untuk menyeimbangkan padding kolom agar total lebar baris tidak melampaui container. */
     margin-left: calc(var(--gutter) * -0.5);
     margin-right: calc(var(--gutter) * -0.5);
 }
 
 [class*="col-"] {
     flex: 1 0 0%;
+    /* menciptakan jarak antar kolom, setengah dari gutter masing-masing sisi. */
     padding-left: calc(var(--gutter) * 0.5);
     padding-right: calc(var(--gutter) * 0.5);
 }
 
 .grid-row.no-gutter {
-  margin-left: 0;
-  margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.grid-row.no-gutter > [class*="col-"] {
-  padding-left: 0;
-  padding-right: 0;
+.grid-row.no-gutter>[class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.dp-none {
+    display: none !important;
+}
+
+.dp-block {
+    display: block !important;
+}
+
+.dp-inline {
+    display: inline !important;
+}
+
+.dp-inline-block {
+    display: inline-block !important;
+}
+
+.dp-flex {
+    display: flex !important;
+}
+
+.dp-inline-flex {
+    display: inline-flex !important;
+}
+
+.dp-grid {
+    display: grid !important;
 }
 
 .col-1 {
@@ -89,6 +123,34 @@
 }
 
 @media (max-width: 1399.98px) {
+    .dp-xxl-none {
+        display: none !important;
+    }
+
+    .dp-xxl-block {
+        display: block !important;
+    }
+
+    .dp-xxl-inline {
+        display: inline !important;
+    }
+
+    .dp-xxl-inline-block {
+        display: inline-block !important;
+    }
+
+    .dp-xxl-flex {
+        display: flex !important;
+    }
+
+    .dp-xxl-inline-flex {
+        display: inline-flex !important;
+    }
+
+    .dp-xxl-grid {
+        display: grid !important;
+    }
+
     .col-xxl-1 {
         flex: 0 0 calc(100% / var(--columns) * 1);
         max-width: calc(100% / var(--columns) * 1);
@@ -151,6 +213,34 @@
 }
 
 @media (max-width: 1199.98px) {
+    .dp-xl-none {
+        display: none !important;
+    }
+
+    .dp-xl-block {
+        display: block !important;
+    }
+
+    .dp-xl-inline {
+        display: inline !important;
+    }
+
+    .dp-xl-inline-block {
+        display: inline-block !important;
+    }
+
+    .dp-xl-flex {
+        display: flex !important;
+    }
+
+    .dp-xl-inline-flex {
+        display: inline-flex !important;
+    }
+
+    .dp-xl-grid {
+        display: grid !important;
+    }
+
     .col-xl-1 {
         flex: 0 0 calc(100% / var(--columns) * 1);
         max-width: calc(100% / var(--columns) * 1);
@@ -213,6 +303,34 @@
 }
 
 @media (max-width: 991.98px) {
+    .dp-lg-none {
+        display: none !important;
+    }
+
+    .dp-lg-block {
+        display: block !important;
+    }
+
+    .dp-lg-inline {
+        display: inline !important;
+    }
+
+    .dp-lg-inline-block {
+        display: inline-block !important;
+    }
+
+    .dp-lg-flex {
+        display: flex !important;
+    }
+
+    .dp-lg-inline-flex {
+        display: inline-flex !important;
+    }
+
+    .dp-lg-grid {
+        display: grid !important;
+    }
+
     .col-lg-1 {
         flex: 0 0 calc(100% / var(--columns) * 1);
         max-width: calc(100% / var(--columns) * 1);
@@ -275,6 +393,34 @@
 }
 
 @media (max-width: 767.98px) {
+    .dp-md-none {
+        display: none !important;
+    }
+
+    .dp-md-block {
+        display: block !important;
+    }
+
+    .dp-md-inline {
+        display: inline !important;
+    }
+
+    .dp-md-inline-block {
+        display: inline-block !important;
+    }
+
+    .dp-md-flex {
+        display: flex !important;
+    }
+
+    .dp-md-inline-flex {
+        display: inline-flex !important;
+    }
+
+    .dp-md-grid {
+        display: grid !important;
+    }
+
     .col-md-1 {
         flex: 0 0 calc(100% / var(--columns) * 1);
         max-width: calc(100% / var(--columns) * 1);
@@ -337,6 +483,38 @@
 }
 
 @media (max-width: 575.98px) {
+    .dp-sm-none {
+        display: none !important;
+    }
+
+    .dp-sm-block {
+        display: block !important;
+    }
+
+    .dp-sm-inline {
+        display: inline !important;
+    }
+
+    .dp-sm-inline-block {
+        display: inline-block !important;
+    }
+
+    .dp-sm-flex {
+        display: flex !important;
+    }
+
+    .dp-sm-inline-flex {
+        display: inline-flex !important;
+    }
+
+    .dp-sm-grid {
+        display: grid !important;
+    }
+
+    .dr-sm-column {
+        flex-direction: column !important;
+    }
+
     .col-sm-1 {
         flex: 0 0 calc(100% / var(--columns) * 1);
         max-width: calc(100% / var(--columns) * 1);
