@@ -39,9 +39,7 @@
     background: var(--old_wine);
 }
 
-main {
-    
-}
+main {}
 
 body {
     background-color: var(--var(--white));

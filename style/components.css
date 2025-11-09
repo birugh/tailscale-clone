@@ -52,13 +52,6 @@ nav {
   gap: 24px;
 }
 
-.nav__primary ul {
-  justify-content: flex-start;
-}
-
-.nav__secondary ul {
-  justify-content: flex-end;
-}
 
 .nav-mobile-menu {
   display: none;
@@ -92,7 +85,6 @@ nav {
   border-radius: 0 0 12px 12px;
   top: 50%;
   right: 0;
-  /* width: 30%; */
   height: 100vh;
   padding: 24px;
   background-color: #fff;
@@ -102,10 +94,6 @@ nav {
   transform: translateX(1620px) translateY(49px);
   transition: all .7s ease;
   z-index: 0;
-}
-
-.menu__primary {
-  display: inline;
 }
 
 .menu__content a {
